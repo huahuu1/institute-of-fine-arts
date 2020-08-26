@@ -19,10 +19,9 @@ html(lang="en")
         link(rel="stylesheet", href="../../../dist/css/styles.css")
     body
         .container-fluid
-            .wrapper-nav.position-relative
-                include ../patials/navigation.pug
-                include ../patials/banner.pug
-            block main-content
+            include ../patials/navigation.pug
+            include ../patials/slider.pug
+                block main-content
             include ../patials/footer.pug
 
         script(src='https://code.jquery.com/jquery-3.4.1.min.js' integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=' crossorigin='anonymous')
