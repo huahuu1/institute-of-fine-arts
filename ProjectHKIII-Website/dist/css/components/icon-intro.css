@@ -1,0 +1,26 @@
+section.icon-intro {
+  position: relative;
+  height: 24rem;
+  overflow: hidden; }
+  section.icon-intro .parallax {
+    background-image: url("../../dist/assets/images/bgr_cate.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: 90% 0%;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  section.icon-intro .wrapper-icon-box {
+    position: absolute;
+    top: 20%;
+    width: 100%; }
+    section.icon-intro .wrapper-icon-box .col-inner {
+      text-align: center; }
+      section.icon-intro .wrapper-icon-box .col-inner .icon-box .icon-box-img .icon-inner {
+        fill: #f1f1f1; }
+        section.icon-intro .wrapper-icon-box .col-inner .icon-box .icon-box-img .icon-inner svg {
+          width: 10rem;
+          height: auto; }
+      section.icon-intro .wrapper-icon-box .col-inner .icon-box .icon-box-text h3 {
+        font-size: 2rem;
+        font-family: 'Roboto Slab', serif;
+        color: #f1f1f1; }

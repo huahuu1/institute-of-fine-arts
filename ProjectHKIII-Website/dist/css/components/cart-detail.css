@@ -1,0 +1,100 @@
+.cartDetails {
+  padding: 2rem 1.5rem; }
+  .cartDetails table thead th {
+    text-align: center;
+    color: #353535;
+    font-weight: 500; }
+  .cartDetails table tbody td {
+    color: #353535;
+    font-size: 1.5rem; }
+  .cartDetails table tbody .productRemove, .cartDetails table tbody .productThumbnail, .cartDetails table tbody .productName, .cartDetails table tbody .productPrice, .cartDetails table tbody .productQuantity, .cartDetails table tbody .productTotal {
+    padding: 1rem 1.5rem; }
+  .cartDetails table tbody .productRemove a {
+    width: 250rem;
+    height: 250rem;
+    background-color: #40a977;
+    border-radius: 50%; }
+  .cartDetails table tbody .quantityControl .btnMinus, .cartDetails table tbody .quantityControl .btnPlus {
+    width: 2.5rem;
+    height: 3.5rem; }
+  .cartDetails table tbody .quantityControl .txtQuantity {
+    text-align: center;
+    height: 3.5rem; }
+  .cartDetails table tbody .btnCartOut, .cartDetails table tbody .btnCartUpdate {
+    text-align: center;
+    margin: 1.5rem 0.5rem;
+    padding: 0.25rem 0.5rem; }
+  .cartDetails table tbody .btnCartOut {
+    cursor: pointer;
+    border: 0.25rem solid #FF0000;
+    color: #FF0000; }
+    .cartDetails table tbody .btnCartOut a:hover {
+      text-decoration: none; }
+    .cartDetails table tbody .btnCartOut:hover {
+      background-color: #FF0000; }
+      .cartDetails table tbody .btnCartOut:hover a {
+        color: white; }
+  .cartDetails table tbody .btnCartUpdate {
+    background-color: #fa6464;
+    color: white;
+    border: none; }
+    .cartDetails table tbody .btnCartUpdate a:hover {
+      text-decoration: none; }
+    .cartDetails table tbody .btnCartUpdate:hover {
+      background-color: #e16464;
+      color: white; }
+  .cartDetails table tbody tr:first-child {
+    border-top: 0.3rem solid #e1e1e1; }
+  .cartDetails table tbody tr:last-child {
+    border-top: 0.15rem solid #e1e1e1; }
+
+.cartContext {
+  border-left: 0.1rem solid #e1e1e1;
+  padding: 2rem 0 2rem 5rem; }
+  .cartContext table {
+    width: 100%; }
+    .cartContext table th {
+      color: #353535;
+      font-weight: 500; }
+    .cartContext table tr {
+      border-bottom: 0.1rem solid #e1e1e1; }
+      .cartContext table tr:last-child {
+        border-bottom: 0.25rem solid #e1e1e1; }
+      .cartContext table tr td {
+        padding: 1rem 0;
+        color: #353535;
+        font-size: 1.5rem; }
+  .cartContext .d-flex {
+    align-items: center;
+    border-bottom: 0.25rem solid #e1e1e1; }
+    .cartContext .d-flex i {
+      padding-right: 1rem; }
+  .cartContext .cartPayment {
+    cursor: pointer;
+    text-align: center;
+    margin: 1.5rem 0;
+    padding: 0.75rem 0;
+    background-color: #3264c8;
+    color: white;
+    font-weight: 500; }
+    .cartContext .cartPayment a:hover {
+      color: white;
+      text-decoration: none; }
+    .cartContext .cartPayment:hover {
+      background-color: #194b96; }
+  .cartContext form h3 {
+    padding: 0.75rem 0;
+    color: #353535;
+    font-weight: 500; }
+  .cartContext form input {
+    width: 100%;
+    padding: 0.75rem 1.5rem;
+    margin: 0.75rem 0;
+    font-size: 1.5rem; }
+  .cartContext form input[type="submit"] {
+    background-color: #F9F9F9;
+    border: 0.1rem solid #969696; }
+    .cartContext form input[type="submit"]:hover {
+      background-color: #c8c8c8; }
+  .cartContext form .btn-info {
+    font-weight: 500; }

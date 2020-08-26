@@ -1,0 +1,81 @@
+.container
+    .account-payment
+        .row
+            p Do you already have an account?
+            a(href="#").btnShow >>> Click here to sign in <<<
+        form(action="" method="").d-none
+            p If you have shopped with us before, please enter your details below. If you are a new customer, please proceed to the Billing & Shipping section.
+            .row
+                .col-6.col-sm-6.userName
+                    .form-group
+                        label(for="") User Name
+                        input(type="text" id="" name="" maxlength="10").txtUserName.form-control
+                .col-6.col-sm-6.password
+                    .form-group
+                        label(for="") Password
+                        input(type="password" id="" name="").txtPassword.form-control
+            .row.logIn
+                input(type="submit" id="" name="" value="Log In").btnLogIn
+                input(type="checkbox" id="" name="" value="RememberPassword").checkRememberPassword
+                p Remember Password
+    .coupon
+        .row
+            p Have a coupon code?
+            a(href="#").btnShow >>> Click here to enter your coupon code <<<
+        form(action="" method="").d-none
+            p If you have a coupon code, enter it in the box below:
+            .d-flex
+                input(type="text" id="" name="" maxlength="10").txtCoupon
+                input(type="submit" id="" name="" value="Apply").btnApply
+    .payment
+        .row
+            .col-sm-12.col-md-12.col-lg-7.paymentInformation
+                h1 PAYMENT INFORMATION
+                .row
+                    .form-group.col-6.col-sm-6.lastName
+                        label(for="") Last Name*
+                        input(type="text" id="" name="" maxlength="10").form-control
+                    .form-group.col-6.col-sm-6.firstName
+                        label(for="") First Name*
+                        input(type="text" id="" name="" maxlength="10").form-control
+                .form-group
+                    label(for="") Company
+                    input(type="text" id="" name="" maxlength="10").form-control
+                    label(for="") Address*
+                    input(type="text" id="" name="" maxlength="10").form-control
+                    label(for="") Zip Code
+                    input(type="text" id="" name="" maxlength="10").form-control
+                    label(for="") Tel*
+                    input(type="text" id="" name="" maxlength="10").form-control
+                    label(for="") Email*
+                    input(type="text" id="" name="" maxlength="10").form-control
+                    .row
+                        input(type="checkbox" id="" name="")
+                        p Create a new account?
+                    .row
+                        input(type="checkbox" id="" name="")
+                        p Ship to another address?
+                    label(for="") Note
+                    textarea(rows="10").form-control
+            .col-sm-12.col-md-12.col-lg-5(style="padding-right: 0")
+                .paymentOrder
+                    h2 YOUR ORDER
+                    table
+                        thead
+                            tr
+                                th PRODUCT
+                                th(style="text-align: right") AMOUNT
+                        tbody
+                            tr
+                                td Bấm Kim 50LA - 240 Tờ x 15
+                                td(style="text-align: right") 5.250.000đ
+                            tr
+                                td(style="font-weight: 500") Amount
+                                td(style="text-align: right; font-weight: 500") 5.250.000đ
+                            tr
+                                td Delivery Charge
+                                td(style="text-align: right") FREE
+                            tr
+                                td(style="font-weight: 500") Total
+                                td(style="text-align: right; font-weight: 500") 5.250.000đ
+                    input(type="submit" id="" name="" value="Apply")

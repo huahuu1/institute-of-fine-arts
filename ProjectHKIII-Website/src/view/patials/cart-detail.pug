@@ -1,0 +1,55 @@
+.container(style="padding: 5rem 0")
+    .row
+        .col-12.col-sm-12.col-md-7.cartDetails
+            form(action="" method="")
+                table
+                    thead
+                        tr
+                            th(colspan="3") SẢN PHẨM
+                            th GIÁ
+                            th SỐ LƯỢNG
+                            th TỔNG CỘNG
+                    tbody
+                        tr
+                            td(style="text-align: center").productRemove
+                                i.far.fa-times-circle
+                            td().productThumbnail
+                                a(href="#")
+                                    img(src="../../../dist/assets/images/bk-50la-600x600.jpg" width="100px" height="100px" alt="")
+                            td.productName Bấm Kim 50LA - 240 Tờ
+                            td.productPrice(style="font-weight: 500") 350.000đ
+                            td.productQuantity
+                                .quantityControl.d-flex
+                                    input(type="button" id="btnMinus" name="btnMinus" value="-").btnMinus
+                                    input(type="text" id="txtQuantity" name="txtQuantity" size="2.5" value="0").txtQuantity
+                                    input(type="button" id="btnPlus" name="btnPlus" value="+").btnPlus
+                            td.productTotal(style="font-weight: 500") 1.750.000đ
+                        tr
+                            td(colspan="6")
+                                .row
+                                    .btnCartOut.col-sm-6.col-md-6.col-lg-6
+                                        a(href="") ← CONTINUE TO VIEW PRODUCTS
+                                    input(type="submit" id="" name="" value="UPDATE SHOPPING CART").btnCartUpdate.col-sm-5.col-md-5.col-lg-5
+        .col-12.col-sm-12.col-md-5.cartContext
+            table
+                thead
+                    tr
+                        th(colspan="2") BILL
+                tbody
+                    tr
+                        td Amount
+                        td(style="font-weight: 500; text-align: right") 5.000.000đ
+                    tr
+                        td Delivery Charge
+                        td(style="text-align: right") 50.000đ
+                    tr
+                        td Total
+                        td(style="font-weight: 500; text-align: right") 5.050.000đ
+            .cartPayment
+                a(href="") PROCEED TO PAYMENT
+            form(action="" method="")
+                .d-flex
+                    i.fas.fa-tag
+                    h3 Coupon Code
+                input(type="text" id="" name="" maxlength="10")
+                input(type="submit" id="" name="" value="Apply")

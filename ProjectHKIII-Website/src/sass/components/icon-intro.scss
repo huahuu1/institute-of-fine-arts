@@ -1,0 +1,39 @@
+section.icon-intro {
+    position: relative;
+    height: 24rem;
+    overflow: hidden;
+    .parallax {
+        background-image: url('../../dist/assets/images/bgr_cate.jpg');
+        height: 100%;
+        background-attachment: fixed;
+        background-position: 90% 0%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .wrapper-icon-box {
+        position: absolute;
+        top: 20%;
+        width: 100%;
+        .col-inner {
+            text-align: center;
+            .icon-box {
+                .icon-box-img {
+                    .icon-inner {
+                        fill: #f1f1f1;
+                        svg {
+                            width: 10rem;
+                            height: auto;
+                        }
+                    }
+                }
+                .icon-box-text {
+                    h3 {
+                        font-size: 2rem;
+                        font-family: 'Roboto Slab', serif;
+                        color: #f1f1f1;
+                    }
+                }
+            }
+        }
+    }
+}

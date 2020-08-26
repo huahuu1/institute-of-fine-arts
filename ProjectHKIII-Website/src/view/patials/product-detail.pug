@@ -1,0 +1,178 @@
+.container
+    .breadCrumb
+        a(href="#") Trang Chủ
+        span.divider /
+        a(href="#") Dụng cụ văn phòng
+        span.divider /
+        a(href="#") Bấm kim
+    .productMain.row
+        .image.col-sm-12.col-lg-6
+            img(src="../../../dist/assets/images/bk-50la-600x600.jpg")
+        .content.col-sm-12.col-lg-6
+            .nameTag
+                h1 Bấm Kim 50LA - 240 Tờ
+            .divideTag
+            .priceTag.d-flex
+                p 350,000
+                span đ
+            .textTag
+                p
+                |- Bấm kim lớn KW Trio lớn 50LA (240 TỜ) CHÍNH HÃNG
+                br
+                |- Văn phòng phẩm giá rẻ và tốt nhất tại HCM
+                br
+                |- Chuyên cung cấp văn phòng phẩm giá sỉ, Đồ dùng văn phòng tại thành phố Hồ Chí Minh
+                br
+                |- Chúng tôi chuyên cung cấp văn phòng phẩm, thiết bị văn phòng, thiết bị bảo hộ giá rẻ nhất tại Hồ Chí Minh, với phương châm giá rẻ nhất, dịch vụ tốt nhất, cung cấp nhanh tại các quận huyện trong thành phố Hồ Chí Minh
+            form(action="" method="").cartForm
+                .quantityControl.d-flex
+                    input(type="button" id="btnMinus" name="btnMinus" value="-").btnMinus
+                    input(type="text" id="txtQuantity" name="txtQuantity" size="3" value="0").txtQuantity
+                    input(type="button" id="btnPlus" name="btnPlus" value="+").btnPlus
+                    input.btn.btn-primary(type="submit" id="" name="" value="Thêm Vào Giỏ")
+    .productDetail
+        ul.nav.nav-tabs
+            li.nav-item
+                a(href="#description" data-toggle="tab").nav-link.active Mô Tả
+            li.nav-item
+                a(href="#evaluation" data-toggle="tab").nav-link Đánh Giá
+        .tab-content
+            .tab-pane.active#description
+                .description
+                    h3 Dập Kim 50LA, KW TRIO
+                    p – KW trio là thương hiệu văn phòng phẩm uy tín tại Đài Loan trong lĩnh vực sản xuất các loại máy bấm kim, bấm lổ, kim bấm văn phòng
+                        br
+                        | – Thân máy inox, dạng đẩy, bấm 240 tờ, chất lượng ưu việt
+                        br
+                        | – Chức năng: lưu trữ tài liệu và chứng từ, đóng sách
+                        br
+                        | – Đáp ứng tiêu chuẩn sức khỏe người dùng văn phòng
+                        br
+                        | – NSX: Đài Loan
+                        br
+                        | – Quy cách: 1 cái/hộp
+                        br
+                        | – Tiết kiệm hơn khi chọn mua theo nhóm
+                        br
+                        | – Chương trình khuyến mãi chỉ áp dụng cho các đơn hàng trực tuyến
+                        br
+                        | – Vận chuyển miễn phí dựa trên giá trị đơn hàng
+                        br
+                        | – Mẫu mã và thông tin sản phẩm có thể thay đổi theo chính sách nhà sản xuất
+                        br
+                        | – Đơn vị tính: cái
+                        br
+            .tab-pane.fade#evaluation
+                .evaluation
+                    h1 Đánh Giá
+                    p Chưa có đánh giá nào
+                    .comment
+                        h3 Đánh giá của bạn
+                        <div class="stars">
+                        <form action="">
+                            <input class="star star-5" id="star-5" type="radio" name="star"/>
+                            <label class="star star-5" for="star-5" title="Awesome - 5 stars"></label>
+                            <input class="star star-4" id="star-4" type="radio" name="star"/>
+                            <label class="star star-4" for="star-4" title="Pretty good - 4 stars"></label>
+                            <input class="star star-3" id="star-3" type="radio" name="star"/>
+                            <label class="star star-3" for="star-3" title="Meh - 3 stars"></label>
+                            <input class="star star-2" id="star-2" type="radio" name="star"/>
+                            <label class="star star-2" for="star-2" title="Kinda bad - 2 stars"></label>
+                            <input class="star star-1" id="star-1" type="radio" name="star"/>
+                            <label class="star star-1" for="star-1" title="Sucks big time - 1 star"></label>
+                        </form>
+                        </div>
+
+                        h3 Nhận xét của bạn
+                        textarea(style="width: 100%; height: 20rem")
+                        form
+                            .form-row
+                                .col-6.col-sm-6.form-group
+                                    label(for="") Tên*
+                                    input(type="text" id="" name="" maxlength="").form-control
+                                .col-6.col-sm-6.form-group
+                                    label(for="") Email*
+                                    input(type="email" id="" name="" maxlength="").form-control
+                            input(type="submit" value="Gửi Đi" style="width: 7.5rem").btn.btn-info.form-control
+
+    .productOthers
+        .container-fluid
+            h3 SẢN PHẨM TƯƠNG TỰ
+            .owl-carousel.owl-theme.slider-part.banner-inner
+                .item
+                    .product-item
+                        .product-image
+                            img(src="../../../dist/assets/images/Deli-7510-600x600.jpg", alt="")
+                        .product-text
+                            .title-wrapper
+                                a(href="#") Đóng số 10 tự động
+                            .price-wrapper
+                                span.price
+                                    span.woocommerce-price-amount 800,000&nbsp;
+                                    span.woocommerce-price-currencySymbol đ
+                .item
+                    .product-item
+                        .product-image
+                            img(src="../../../dist/assets/images/DraftingCompass-600x600.jpg", alt="")
+                        .product-text
+                            .title-wrapper
+                                a(href="#") Đóng số 10 tự động
+                            .price-wrapper
+                                span.price
+                                    span.woocommerce-price-amount 800,000&nbsp;
+                                    span.woocommerce-price-currencySymbol đ
+                .item
+                    .product-item
+                        .product-image
+                            img(src="../../../dist/assets/images/YP003-600x600.jpg", alt="")
+                        .product-text
+                            .title-wrapper
+                                a(href="#") Đóng số 10 tự động
+                            .price-wrapper
+                                span.price
+                                    span.woocommerce-price-amount 800,000&nbsp;
+                                    span.woocommerce-price-currencySymbol đ
+                .item
+                    .product-item
+                        .product-image
+                            img(src="../../../dist/assets/images/kb-23-23-600x600.jpg", alt="")
+                        .product-text
+                            .title-wrapper
+                                a(href="#") Đóng số 10 tự động
+                            .price-wrapper
+                                span.price
+                                    span.woocommerce-price-amount 800,000&nbsp;
+                                    span.woocommerce-price-currencySymbol đ
+                .item
+                    .product-item
+                        .product-image
+                            img(src="../../../dist/assets/images/ban-cat-giay-a3-600x600.jpg", alt="")
+                        .product-text
+                            .title-wrapper
+                                a(href="#") Đóng số 10 tự động
+                            .price-wrapper
+                                span.price
+                                    span.woocommerce-price-amount 800,000&nbsp;
+                                    span.woocommerce-price-currencySymbol đ
+                .item
+                    .product-item
+                        .product-image
+                            img(src="../../../dist/assets/images/scotch-magic-810-invisible-tape-19mm-x-33m-600x600.jpg", alt="")
+                        .product-text
+                            .title-wrapper
+                                a(href="#") Đóng số 10 tự động
+                            .price-wrapper
+                                span.price
+                                    span.woocommerce-price-amount 800,000&nbsp;
+                                    span.woocommerce-price-currencySymbol đ
+                .item
+                    .product-item
+                        .product-image
+                            img(src="../../../dist/assets/images/jumbo-push-pins-100-count-colorful-clear-600x600.jpg", alt="")
+                        .product-text
+                            .title-wrapper
+                                a(href="#") Đóng số 10 tự động
+                            .price-wrapper
+                                span.price
+                                    span.woocommerce-price-amount 800,000&nbsp;
+                                    span.woocommerce-price-currencySymbol đ

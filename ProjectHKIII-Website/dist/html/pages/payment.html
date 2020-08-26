@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"/><link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,500,700&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+    <link rel="stylesheet" href="../../../dist/css/styles.css"/>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <section class="menu-nav position-relative">
+        <div class="container">
+          <div class="top-navbar flex-row">
+            <div class="logo"><a class="nav-brand" href="../../../dist/html/pages/index.html" alt="logo"><img src="../../assets/images/logo-officemona.png" alt="logo"/></a></div>
+            <div class="search-form-wrapper">
+              <div class="search-form">
+                <form action="" method="get">
+                  <div class="nav-search flex-row">
+                    <div class="flex-col flex-grow">
+                      <input class="search-field mb-0" type="search" placeholder="Tìm nhanh sản phẩm ..."/>
+                    </div>
+                    <div class="flex-col">
+                      <button class="search-submit mb-0 btn" type="submit"><i class="icon-search fas fa-search"></i></button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="account justify-content-end">
+              <ul class="nav">
+                <li class="account-item"><a class="nav-top-link nav-top-not-logged-in"><span>đăng ký</span></a></li>
+                <li class="header-divider"></li>
+                <li class="account-item"><a class="nav-top-link nav-top-not-logged-in"><span>đăng nhập</span></a></li>
+                <li class="header-divider"></li>
+                <li class="cart-item"><a><span class="header-cart-title">giỏ hàng&nbsp</span><span class="cart-price"><span class="amount">/ 0&nbsp<span class="symbol">đ</span><i class="fas fa-shopping-basket icon-basket"></i></span></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="bot-navbar flex-row">
+            <ul class="nav">
+              <li class="hover-nav"><a href="#"><i class="fas fa-star"></i><span>giúp bạn chọn</span></a></li>
+              <li class="hover-nav"><a href="#"><span>dụng cụ văn phòng</span><i class="fas fa-chevron-down arrow-down"></i></a>
+                <ul class="nav-dropdown">
+                  <li class="nav-hover-dropdown"><a href="#">Bấm kim</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Bấm lỗ</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Dao kéo</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Kim bấm</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Kẹp sách - Gáy sách</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Băng keo - Cắt keo</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Keo dán</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Thước - Compa</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Dây buộc</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Đóng dấu - Tampon</a></li>
+                </ul>
+              </li>
+              <li class="hover-nav"><a href="#"><span>giấy</span><i class="fas fa-chevron-down arrow-down"></i></a>
+                <ul class="nav-dropdown">
+                  <li class="nav-hover-dropdown"><a href="#">Giấy in ấn</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Giấy in fax - liên tục</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Giấy notes</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Giấy chuyên dụng</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Khăn giấy - giấy vệ sinh</a></li>
+                </ul>
+              </li>
+              <li class="hover-nav"><a href="#"><span>bìa hồ sơ</span><i class="fas fa-chevron-down arrow-down"></i></a>
+                <ul class="nav-dropdown">
+                  <li class="nav-hover-dropdown"><a href="#">Bìa còng</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Bìa lưu trữ</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Bìa phân trang</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Bìa album</a></li>
+                </ul>
+              </li>
+              <li class="hover-nav"><a href="#"><span>bút viết</span><i class="fas fa-chevron-down arrow-down"></i></a>
+                <ul class="nav-dropdown">
+                  <li class="nav-hover-dropdown"><a href="#">Bút bi - Gel</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Bút chì</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Bút lông - Dạ quang</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Bút chuyên dụng</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Ruột bút</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Phụ kiện bút</a></li>
+                </ul>
+              </li>
+              <li class="hover-nav"><a href="#"><span>tập sổ</span><i class="fas fa-chevron-down arrow-down"></i></a>
+                <ul class="nav-dropdown">
+                  <li class="nav-hover-dropdown"><a href="#">Sổ tập</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Phiếu - Biểu mẫu</a></li>
+                </ul>
+              </li>
+              <li class="hover-nav"><a href="#"><span>lưu trữ</span><i class="fas fa-chevron-down arrow-down"></i></a>
+                <ul class="nav-dropdown">
+                  <li class="nav-hover-dropdown"><a href="#">Khay kệ</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Hộp cầm bút</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Dụng cụ lưu trữ</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Khay Brochure - Menu</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Bao thư</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Bảng tên</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Khung hình</a></li>
+                </ul>
+              </li>
+              <li class="hover-nav"><a href="#"><span>thiết bị</span><i class="fas fa-chevron-down arrow-down"></i></a>
+                <ul class="nav-dropdown">
+                  <li class="nav-hover-dropdown"><a href="#">CD - DVD - USB</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Bàn phím - Chuột</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Pin</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Máy tính</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Dụng cụ - Máy VP</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Thiết bị điện</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Bảng</a></li>
+                </ul>
+              </li>
+              <li class="hover-nav"><a href="#"><span>tiện ích</span><i class="fas fa-chevron-down arrow-down"></i></a>
+                <ul class="nav-dropdown">
+                  <li class="nav-hover-dropdown"><a href="#">DC vệ sinh</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Dung dịch tẩy rửa</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Gia dụng</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Thực phẩm</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Dược phẩm</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Tiện ích cá nhân</a></li>
+                </ul>
+              </li>
+              <li class="hover-nav"><a href="#"><span>mực - ruban</span><i class="fas fa-chevron-down arrow-down"></i></a>
+                <ul class="nav-dropdown">
+                  <li class="nav-hover-dropdown"><a href="#">Mực máy in</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Ruban - Film Fax</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <div class="container">
+        <div class="account-payment">
+          <div class="row">
+            <p>Do you already have an account?</p><a class="btnShow" href="#">>>> Click here to sign in <<<</a>
+          </div>
+          <form class="d-none" action="" method="">
+            <p>If you have shopped with us before, please enter your details below. If you are a new customer, please proceed to the Billing & Shipping section.</p>
+            <div class="row">
+              <div class="col-6 col-sm-6 userName">
+                <div class="form-group">
+                  <label for="">User Name</label>
+                  <input class="txtUserName form-control" type="text" id="" name="" maxlength="10"/>
+                </div>
+              </div>
+              <div class="col-6 col-sm-6 password">
+                <div class="form-group">
+                  <label for="">Password</label>
+                  <input class="txtPassword form-control" type="password" id="" name=""/>
+                </div>
+              </div>
+            </div>
+            <div class="row logIn">
+              <input class="btnLogIn" type="submit" id="" name="" value="Log In"/>
+              <input class="checkRememberPassword" type="checkbox" id="" name="" value="RememberPassword"/>
+              <p>Remember Password</p>
+            </div>
+          </form>
+        </div>
+        <div class="coupon">
+          <div class="row">
+            <p>Have a coupon code?</p><a class="btnShow" href="#">>>> Click here to enter your coupon code <<<</a>
+          </div>
+          <form class="d-none" action="" method="">
+            <p>If you have a coupon code, enter it in the box below:</p>
+            <div class="d-flex">
+              <input class="txtCoupon" type="text" id="" name="" maxlength="10"/>
+              <input class="btnApply" type="submit" id="" name="" value="Apply"/>
+            </div>
+          </form>
+        </div>
+        <div class="payment">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-7 paymentInformation">
+              <h1>PAYMENT INFORMATION</h1>
+              <div class="row">
+                <div class="form-group col-6 col-sm-6 lastName">
+                  <label for="">Last Name*</label>
+                  <input class="form-control" type="text" id="" name="" maxlength="10"/>
+                </div>
+                <div class="form-group col-6 col-sm-6 firstName">
+                  <label for="">First Name*</label>
+                  <input class="form-control" type="text" id="" name="" maxlength="10"/>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="">Company</label>
+                <input class="form-control" type="text" id="" name="" maxlength="10"/>
+                <label for="">Address*</label>
+                <input class="form-control" type="text" id="" name="" maxlength="10"/>
+                <label for="">Zip Code</label>
+                <input class="form-control" type="text" id="" name="" maxlength="10"/>
+                <label for="">Tel*</label>
+                <input class="form-control" type="text" id="" name="" maxlength="10"/>
+                <label for="">Email*</label>
+                <input class="form-control" type="text" id="" name="" maxlength="10"/>
+                <div class="row">
+                  <input type="checkbox" id="" name=""/>
+                  <p>Create a new account?</p>
+                </div>
+                <div class="row">
+                  <input type="checkbox" id="" name=""/>
+                  <p>Ship to another address?</p>
+                </div>
+                <label for="">Note</label>
+                <textarea class="form-control" rows="10"></textarea>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-5" style="padding-right: 0">
+              <div class="paymentOrder">
+                <h2>YOUR ORDER</h2>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>PRODUCT</th>
+                      <th style="text-align: right">AMOUNT</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Bấm Kim 50LA - 240 Tờ x 15</td>
+                      <td style="text-align: right">5.250.000đ</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 500">Amount</td>
+                      <td style="text-align: right; font-weight: 500">5.250.000đ</td>
+                    </tr>
+                    <tr>
+                      <td>Delivery Charge</td>
+                      <td style="text-align: right">FREE</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 500">Total</td>
+                      <td style="text-align: right; font-weight: 500">5.250.000đ</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <input type="submit" id="" name="" value="Apply"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer-wrapper" id="footer">
+        <section class="footer">
+          <div class="line"></div>
+          <div class="footer-content">
+            <div class="top-content row">
+              <div class="company-info col-sm-6 col-lg-3">
+                <div class="title">
+                  <div class="title-img"><img src="../../../dist/assets/images/logo-officemona.png"/></div>
+                </div>
+                <div class="content">
+                  <div class="icon-box d-flex">
+                    <div class="icon-box-img"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="icon-box-text"><span>319 C16 Lý Thường Kiệt, Phường 15, Quận 11, Tp.HCM</span></div>
+                  </div>
+                  <div class="icon-box d-flex">
+                    <div class="icon-box-img"><i class="fas fa-phone-square"></i></div>
+                    <div class="icon-box-text"><span>0126 922 0162</span></div>
+                  </div>
+                  <div class="icon-box d-flex">
+                    <div class="icon-box-img"><i class="fas fa-envelope"></i></div>
+                    <div class="icon-box-text"><span>demonhunter@gmail.com</span></div>
+                  </div>
+                  <div class="icon-box d-flex">
+                    <div class="icon-box-img"><i class="fab fa-skype"></i></div>
+                    <div class="icon-box-text"><span>demonhunterp</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="top-seller col-sm-6 col-lg-3">
+                <div class="title">
+                  <h3>sản phẩm bán chạy</h3>
+                </div>
+                <div class="content row">
+                  <div class="content-item col-lg-4"><img src="../../assets/images/but-da-quang-600x600.jpg" alt=""/></div>
+                  <div class="content-item col-lg-4"><img src="../../assets/images/bk-50la-600x600.jpg" alt=""/></div>
+                  <div class="content-item col-lg-4"><img src="../../assets/images/bam_lo_978-600x600.jpg" alt=""/></div>
+                  <div class="content-item col-lg-4"><img src="../../assets/images/POS-Paper-receipt-bond-thermo-paper-roll-600x600.jpg" alt=""/></div>
+                  <div class="content-item col-lg-4"><img src="../../assets/images/small-notebook-companion-600x600.jpg" alt=""/></div>
+                  <div class="content-item col-lg-4"><img src="../../assets/images/stained-600x600.jpg" alt=""/></div>
+                </div>
+              </div>
+              <div class="menu col-sm-6 col-lg-3">
+                <div class="title">
+                  <h3>menu</h3>
+                </div>
+                <div class="content">
+                  <div class="icon-box d-flex">
+                    <div class="icon-box-img"><i class="fas fa-book"></i></div>
+                    <div class="icon-box-text"><a href="#">Trang chủ</a></div>
+                  </div>
+                  <div class="icon-box d-flex">
+                    <div class="icon-box-img"><i class="fas fa-book"></i></div>
+                    <div class="icon-box-text"><a href="#">Giới thiệu</a></div>
+                  </div>
+                  <div class="icon-box d-flex">
+                    <div class="icon-box-img"><i class="fas fa-book"></i></div>
+                    <div class="icon-box-text"><a href="#">Cửa hàng</a></div>
+                  </div>
+                  <div class="icon-box d-flex">
+                    <div class="icon-box-img"><i class="fas fa-book"></i></div>
+                    <div class="icon-box-text"><a href="#">Tin tức</a></div>
+                  </div>
+                  <div class="icon-box d-flex">
+                    <div class="icon-box-img"><i class="fas fa-book"></i></div>
+                    <div class="icon-box-text"><a href="#">Liên hệ</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="list-product col-sm-6 col-lg-3">
+                <div class="title">
+                  <h3>danh mục sản phẩm</h3>
+                </div>
+                <div class="content d-flex">
+                  <div class="content-part">
+                    <div class="icon-box d-flex">
+                      <div class="icon-box-img"><i class="fas fa-book"></i></div>
+                      <div class="icon-box-text"><a href="#">Dụng cụ văn phòng</a></div>
+                    </div>
+                    <div class="icon-box d-flex">
+                      <div class="icon-box-img"><i class="fas fa-book"></i></div>
+                      <div class="icon-box-text"><a href="#">Bìa hồ sơ</a></div>
+                    </div>
+                    <div class="icon-box d-flex">
+                      <div class="icon-box-img"><i class="fas fa-book"></i></div>
+                      <div class="icon-box-text"><a href="#">Tập sổ</a></div>
+                    </div>
+                    <div class="icon-box d-flex">
+                      <div class="icon-box-img"><i class="fas fa-book"></i></div>
+                      <div class="icon-box-text"><a href="#">Thiết bị</a></div>
+                    </div>
+                    <div class="icon-box d-flex">
+                      <div class="icon-box-img"><i class="fas fa-book"></i></div>
+                      <div class="icon-box-text"><a href="#">Mực – Ruban</a></div>
+                    </div>
+                  </div>
+                  <div class="content-part">
+                    <div class="icon-box d-flex">
+                      <div class="icon-box-img"><i class="fas fa-book"></i></div>
+                      <div class="icon-box-text"><a href="#">Giấy</a></div>
+                    </div>
+                    <div class="icon-box d-flex">
+                      <div class="icon-box-img"><i class="fas fa-book"></i></div>
+                      <div class="icon-box-text"><a href="#">Bút viết</a></div>
+                    </div>
+                    <div class="icon-box d-flex">
+                      <div class="icon-box-img"><i class="fas fa-book"></i></div>
+                      <div class="icon-box-text"><a href="#">Lưu trữ</a></div>
+                    </div>
+                    <div class="icon-box d-flex">
+                      <div class="icon-box-img"><i class="fas fa-book"></i></div>
+                      <div class="icon-box-text"><a href="#">Tiện ích</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bottom-content row">
+              <div class="social-network col-sm-6 col-lg-3">
+                <div class="divider-line"></div>
+                <div class="title">
+                  <h3>kết nối với chúng tôi</h3>
+                </div>
+                <div class="content d-flex">
+                  <div class="icon-box d-flex">
+                    <div class="icon-box-img"><i class="fab fa-facebook-f"></i></div>
+                  </div>
+                  <div class="icon-box d-flex">
+                    <div class="icon-box-img"><i class="fab fa-instagram"></i></div>
+                  </div>
+                  <div class="icon-box d-flex">
+                    <div class="icon-box-img"><i class="fab fa-twitter"></i></div>
+                  </div>
+                </div>
+              </div>
+              <div class="payments col-sm-6 col-lg-3">
+                <div class="divider-line"></div>
+                <div class="title">
+                  <h3>chấp nhận thanh toán</h3>
+                </div>
+                <div class="content"><img src="../../assets/images/image-paypal.png" alt=""/></div>
+              </div>
+              <div class="register col-sm-12 col-lg-6">
+                <div class="divider-line"></div>
+                <div class="wrapper-regiter d-flex">
+                  <div class="register-text col-sm-12 col-lg-6">
+                    <div class="title">
+                      <h3>đăng ký</h3>
+                    </div>
+                    <div class="content">
+                      <p>Đăng ký để nhận được được thông tin mới nhất từ chúng tôi.</p>
+                    </div>
+                  </div>
+                  <div class="register-button col-sm-12 col-lg-6 d-flex">
+                    <div class="btn btn-danger"><a href="#">ĐĂNG KÝ</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div id="backtoTop"><i class="fas fa-chevron-up"></i></div>
+      </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="../../js/owl-carousel.js"></script>
+    <script type="text/javascript" src="../../js/navigation.js"></script>
+    <script type="text/javascript" src="../../js/product-detail.js"></script>
+    <script type="text/javascript" src="../../js/category-detail.js"></script>
+    <script type="text/javascript" src="../../js/product.js"></script>
+    <script type="text/javascript" src="../../js/back-to-top.js"></script>
+    <script type="text/javascript" src="../../js/index.js"></script>
+    <script type="text/javascript" src="../../js/payment.js"></script>
+  </body>
+</html>

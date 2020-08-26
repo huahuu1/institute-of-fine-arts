@@ -1,0 +1,522 @@
+.container {
+    .breadCrumb {
+        padding: 2rem 0;
+        text-transform: uppercase;
+        color: rgba(102, 102, 102, 0.7);
+        a {
+            cursor: pointer;
+            color: rgba(102, 102, 102, 0.7);
+            &:hover {
+                color: #222;
+                text-decoration: none;
+            }
+        }
+        .divider {
+            margin: auto 1rem;
+        }
+    }
+
+    .productMain {
+        padding: 1.5rem 0;
+        .image {
+            overflow: hidden;
+            img {
+                width: 100%;
+                transition: all 1s ease;
+                -webkit-transition: all 1s ease;
+                -moz-transition: all 1s ease;
+                -ms-transition: all 1s ease;
+                -o-transition: all 1s ease;
+            }
+            &:hover img {
+                transform: scale(1.2);
+                -webkit-transform: scale(1.2);
+                -moz-transform: scale(1.2);
+                -ms-transform: scale(1.2);
+                -o-transform: scale(1.2);
+}
+        }
+        .content {
+            width: 100%;
+            color: #1C1C1C;
+            padding: 1.5rem 4rem;
+            .nameTag {
+                h1 {
+                    color: #1c1c1c;
+                    font-weight: bold;
+                    font-size: 2.7rem;
+                    font-family: "Roboto Slab", sans-serif;
+                }
+
+            }
+            .divideTag {
+                margin: 2rem 0;
+                height: 2.5px;
+                display: block;
+                background-color: rgba(0, 0, 0, 0.1);
+                width: 100%;
+                max-width: 40px
+            }
+            .priceTag {
+                // padding: auto 0;
+                align-items: center;
+                font-weight: 500;
+                color: #111;
+                p {
+                    margin: 0;
+                    margin-right: .5rem;
+                    font-size: 2.4rem;
+                }
+                span {
+                    font-size: 1.8rem;
+                    text-decoration: underline;
+                    font-weight: bold;
+                }
+            }
+            .textTag {
+                margin-bottom: 2rem;
+                p {
+                    font-size: 1.6rem;
+                }
+            }
+            .cartForm {
+                .quantityControl {
+                    .btnMinus, .btnPlus {
+                        width: 2.5rem;
+                        height: 4rem
+                    }
+                    .txtQuantity {
+                        text-align: center;
+                        height: 4rem
+                    }
+                    .btn-primary {
+                        margin: 0 5rem;
+                        width: 15rem;
+                        height: 4rem;
+                        font-size: 1.6rem;
+                        text-transform: uppercase;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+    .productDetail {
+        padding: 4rem 0;
+        .nav-item .nav-link.active {
+            border-top: 2px solid rgb(250, 50, 100)
+        }
+        .nav-item {
+            font-family: "Kanit", sans-serif;
+            font-size: 1.5rem;
+            color: #000;
+            font-weight: 500;
+            .nav-link {
+                padding: 1rem 1.5rem;
+            }
+        }
+        .tab-content {
+            border: 0.5px solid rgba(100, 100, 100, 0.25);
+            border-top: none;
+            .description, .evaluation {
+                padding: 2.5rem 5rem;
+                h3 {
+                    color: #000;
+                    padding: 1.5rem 0;
+                    font-size: 2rem;
+                    font-family: 'Roboto Slab', sans-serif;
+                }
+                p {
+                    font-size: 1.6rem;
+                }
+                .comment {
+                    padding: 2.5rem 2.5rem;
+                    border: 0.25rem solid rgb(205, 55, 55);
+                    textarea {
+                        margin: 1.5rem 0
+                    }
+                    form {
+                        input {
+                            height: 3rem;
+                            font-size: 1.5rem
+                        }
+                        input.btn-info {
+                            height: 3.5rem
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .productOthers {
+        h3 {
+            color: #000;
+            padding: 1.5rem 0;
+            font-family: "Roboto Slab", sans-serif;
+            margin: 0 6rem 1.5rem;
+            font-size: 2rem;
+            text-transform: uppercase;
+        }
+        .slider-supplier {
+            margin-top: 1rem;
+            img {
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+        .slider-part,
+        .slider-supplier {
+            margin-bottom: 2rem;
+            .owl-stage-outer {
+                .owl-stage {
+                    .owl-item {
+                        .item {
+                            img {
+
+                            }
+                        }
+                    }
+                }
+            }
+            .owl-nav {
+                .owl-prev {
+                    position: absolute;
+                    top: 0;
+                    left: -5%;
+                    height: 100%;
+                    width: 10rem;
+                    margin: 0
+                }
+                .owl-next {
+                    position: absolute;
+                    top: 0;
+                    right: -5%;
+                    height: 100%;
+                    width: 10rem;
+                    margin: 0
+                }
+                button.owl-prev, button.owl-next {
+                    background: transparent;
+                    opacity: 0;
+                    transition: all .3s ease;
+                    -webkit-transition: all .3s ease;
+                    -moz-transition: all .3s ease;
+                    -ms-transition: all .3s ease;
+                    -o-transition: all .3s ease;
+                    &:hover {
+                        outline: none
+                    }
+                    i {
+                        transition: all .3s ease;
+                        -webkit-transition: all .3s ease;
+                        -moz-transition: all .3s ease;
+                        -ms-transition: all .3s ease;
+                        -o-transition: all .3s ease;
+                        color: #111;
+                        font-size: 2.2rem
+                    }
+                    &:hover i {
+                        color: #ff0000
+                    }
+                }
+            }
+        }
+        .owl-carousel .owl-item .owl-lazy:not([src]), .owl-carousel .owl-item .owl-lazy[src^=""] {
+            max-height: none !important
+        }
+        .banner-inner {
+            button.owl-prev, button.owl-next {
+                outline: none
+            }
+            &:hover button.owl-prev, &:hover button.owl-next {
+                opacity: 1;
+                outline: none
+            }
+            &:hover .owl-prev {
+                transform: translateX(10%);
+                -webkit-transform: translateX(10%);
+                -moz-transform: translateX(10%);
+                -ms-transform: translateX(10%);
+                -o-transform: translateX(10%)
+            }
+            &:hover .owl-next {
+                transform: translateX(-10%);
+                -webkit-transform: translateX(-10%);
+                -moz-transform: translateX(-10%);
+                -ms-transform: translateX(-10%);
+                -o-transform: translateX(-10%)
+            }
+            .item {
+                .product-item {
+                    .product-text {
+                        .title-wrapper {
+                            text-align: center;
+                            a {
+                                font-size: 1.5rem;
+                                color: #222
+                            }
+                        }
+                        .price-wrapper {
+                            font-size: 1.5rem;
+                            text-align: center;
+                            color: #000
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 550px) {
+    .slider-part {
+        height: 60rem;
+        .owl-stage {
+            .owl-item {
+                height: 60rem
+            }
+        }
+    }
+}
+
+@media (min-width: 770px) {
+    .slider-part {
+        height: 35rem;
+        .owl-stage {
+            .owl-item {
+                height: 35rem
+            }
+        }
+    }
+}
+
+@media (min-width: 850px) {
+    .slider-part {
+        height: 23rem;
+        .owl-stage {
+            .owl-item {
+                height: 23rem
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .slider-part {
+        height: 30rem;
+        .owl-stage {
+            //padding-top: 75rem;
+            .owl-item {
+                height: 30rem
+            }
+        }
+    }
+}
+
+//Carousel
+// .col-md-3 {
+//     display: inline-block;
+//     margin-left:-4px;
+//     img{
+//         width:100%;
+//         height:auto
+//     }
+// }
+/*
+body {
+    .carousel-indicators li {
+        background-color:red
+    }
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        background-color:red
+    }
+    .no-padding {
+        padding-left: 0;
+        padding-right: 0
+    }
+}*/
+
+//Carousel
+// @media (min-width: 768px) and (max-width: 991px) {
+//     /*show 4th slide on md if col-md-4*/
+//     .carousel-inner .active.col-md-4.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+//         position: absolute;
+//         top: 0;
+//         right: -33.3333%; /*change this with javascript in the future*/
+//         z-index: -1;
+//         display: block;
+//         visibility: visible
+//     }
+// }
+// @media (min-width: 576px) and (max-width: 768px) {
+//     /*show 3rd slide on sm if col-sm-6*/
+//     .carousel-inner .active.col-sm-6.carousel-item + .carousel-item + .carousel-item {
+//         position: absolute;
+//         top: 0;
+//         right: -50%; /*change this with javascript in the future*/
+//         z-index: -1;
+//         display: block;
+//         visibility: visible
+//     }
+// }
+// @media (min-width: 576px) {
+//     .carousel-item {
+//         margin-right: 0
+//     }
+//     /*show 2 items*/
+//     .carousel-inner .active + .carousel-item {
+//         display: block
+//     }
+//     .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+//     .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item {
+//         transition: none
+//     }
+//     .carousel-inner .carousel-item-next {
+//         position: relative;
+//         transform: translate3d(0, 0, 0)
+//     }
+//     /*left or forward direction*/
+//     .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+//     .carousel-item-next.carousel-item-left + .carousel-item,
+//     .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item {
+//         position: relative;
+//         transform: translate3d(-100%, 0, 0);
+//         visibility: visible
+//     }
+//     /*farthest right hidden item must be also positioned for animations*/
+//     .carousel-inner .carousel-item-prev.carousel-item-right {
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         z-index: -1;
+//         display: block;
+//         visibility: visible
+//     }
+//     /*right or previous direction*/
+//     .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+//     .carousel-item-prev.carousel-item-right + .carousel-item,
+//     .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item {
+//         position: relative;
+//         transform: translate3d(100%, 0, 0);
+//         visibility: visible;
+//         display: block;
+//         visibility: visible
+//     }
+// }
+// /*MD*/
+// @media (min-width: 768px) {
+//     /*show 3rd of 3 item slide*/
+//     .carousel-inner .active + .carousel-item + .carousel-item {
+//         display: block
+//     }
+//     .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+//         transition: none
+//     }
+//     .carousel-inner .carousel-item-next {
+//         position: relative;
+//         transform: translate3d(0, 0, 0)
+//     }
+//     /*left or forward direction*/
+//     .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+//         position: relative;
+//         transform: translate3d(-100%, 0, 0);
+//         visibility: visible
+//     }
+//     /*right or previous direction*/
+//     .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+//         position: relative;
+//         transform: translate3d(100%, 0, 0);
+//         visibility: visible;
+//         display: block;
+//         visibility: visible
+//     }
+// }
+// /*LG*/
+// @media (min-width: 991px) {
+//     /*show 4th item*/
+//     .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
+//         display: block
+//     }
+//     .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+//         transition: none
+//     }
+//     /*show 5th slide on lg if col-lg-3*/
+//     .carousel-inner .active.col-lg-3.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+//         position: absolute;
+//         top: 0;
+//         right: -25%; /*change this with javascript in the future*/
+//         z-index: -1;
+//         display: block;
+//         visibility: visible
+//     }
+//     /*left or forward direction*/
+//     .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+//         position: relative;
+//         transform: translate3d(-100%, 0, 0);
+//         visibility: visible
+//     }
+//     /*right or previous direction //t - previous slide direction last item animation fix*/
+//     .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+//         position: relative;
+//         transform: translate3d(100%, 0, 0);
+//         visibility: visible;
+//         display: block;
+//         visibility: visible
+//     }
+// }
+
+// /*Carousel control*/
+// .carousel a {
+//     width: 4rem
+// }
+// .carousel-control-prev-icon, .carousel-control-next-icon {
+//     display: none
+// }
+// .carousel.slide {
+//     &:hover {
+//         .carousel-control-prev-icon {
+//             display: block;
+//             background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E")
+//         }
+
+//         .carousel-control-next-icon {
+//             display: block;
+//             background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E")
+//         }
+//     }
+// }
+
+div.stars {
+    width: 270px;
+    display: inline-block;
+  }
+
+  input.star { display: none; }
+
+  label.star {
+    float: right;
+    padding: 10px;
+    font-size: 36px;
+    color: #444;
+    transition: all .2s;
+  }
+
+  input.star:checked ~ label.star:before {
+    content: '\f005';
+    color: #FD4;
+    transition: all .25s;
+  }
+
+  input.star-5:checked ~ label.star:before {
+    color: #FE7;
+    text-shadow: 0 0 20px #952;
+  }
+
+  input.star-1:checked ~ label.star:before { color: #F62; }
+
+  label.star:hover { transform: rotate(-15deg) scale(1.3); }
+
+  label.star:before {
+    content: '\f006';
+    font-family: FontAwesome;
+  }

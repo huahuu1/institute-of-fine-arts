@@ -1,0 +1,89 @@
+.account-payment, .coupon, .payment {
+  color: #335533;
+  font-size: 1.5rem; }
+  .account-payment a, .coupon a, .payment a {
+    padding: 0 1rem;
+    text-decoration: none; }
+    .account-payment a:hover, .coupon a:hover, .payment a:hover {
+      color: inherit; }
+  .account-payment input, .coupon input, .payment input {
+    font-size: 1.5rem;
+    height: 3.5rem; }
+
+.account-payment {
+  margin-top: 2.5rem; }
+  .account-payment .userName {
+    padding: 0 1.5rem 0 0; }
+  .account-payment .password {
+    padding: 0 0 0 1.5rem; }
+  .account-payment .logIn {
+    padding-bottom: 1.5rem; }
+    .account-payment .logIn p {
+      margin: 0.4rem 0 0 0.5rem; }
+  .account-payment .btnLogIn {
+    width: 10rem;
+    font-weight: 500;
+    background-color: #FF0000;
+    border: none;
+    color: white; }
+  .account-payment .checkRememberPassword {
+    margin-left: 2.5rem; }
+
+.coupon form {
+  border: 0.25rem dashed #FF0000;
+  padding: 2.5rem 2.5rem; }
+
+.coupon .txtCoupon {
+  width: 80%;
+  border: 0.1rem solid #c8c8c8;
+  box-shadow: 0px 0px 5px 1px #d7d7d7; }
+
+.coupon .btnApply {
+  width: 20%;
+  background-color: #FF0000;
+  border: none;
+  color: white; }
+
+.payment {
+  margin-top: 2.5rem; }
+  .payment .paymentInformation {
+    padding: 1.5rem 5rem 1.5rem 0;
+    border-top: 0.25rem solid rgba(225, 225, 225, 0.75); }
+    .payment .paymentInformation label {
+      font-weight: 500; }
+    .payment .paymentInformation .lastName {
+      padding-left: 0; }
+    .payment .paymentInformation .firstName {
+      padding-right: 0; }
+    .payment .paymentInformation .form-control {
+      margin-bottom: 1rem; }
+    .payment .paymentInformation .form-group .row p {
+      margin: 0.4rem 0 0 1rem; }
+  .payment .paymentOrder {
+    border: 0.25rem solid #FF0000;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 2.5rem; }
+    .payment .paymentOrder h2 {
+      margin: 1.5rem 0; }
+    .payment .paymentOrder th {
+      color: #353535;
+      font-weight: 500; }
+    .payment .paymentOrder table {
+      width: 100%; }
+      .payment .paymentOrder table tr {
+        border-bottom: 0.1rem solid #e1e1e1; }
+        .payment .paymentOrder table tr:last-child {
+          border-bottom: 0.25rem solid #e1e1e1; }
+        .payment .paymentOrder table tr td {
+          padding: 1rem 0;
+          color: #353535;
+          font-size: 1.5rem; }
+    .payment .paymentOrder input {
+      height: 4rem;
+      width: 100%;
+      margin: 2.5rem 0; }
+    .payment .paymentOrder input[type="submit"] {
+      background-color: #3264c8;
+      color: white;
+      font-weight: 500;
+      border: none; }

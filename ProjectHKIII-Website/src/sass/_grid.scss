@@ -1,0 +1,77 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto !important;
+}
+
+.flex-row {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.flex-col {
+    max-height: 100%;
+}
+
+.flex-grow {
+    flex: 1;
+}
+
+.container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+// @media (min-width: 576px) {
+//     .container {
+//         max-width: 540px;
+//     }
+// }
+
+// @media (min-width: 768px) {
+//     .container {
+//         max-width: 720px;
+//     }
+// }
+
+// @media (min-width: 992px) {
+//     .container {
+//         max-width: 960px;
+//     }
+// }
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1230px;
+    }
+}
+
+// @for $i from 1 through 12 {
+//     .col-#{$i} {
+//         flex-basis: 100% / 12 * $i;
+//         max-width: 100% / 12 * $i;
+//         padding: 0 15px;
+//     }
+// }
+
+// @each $p in (
+//     sm 576px,
+//     md 768px,
+//     lg 992px,
+//     xl 1200px
+// ) {
+//     @for $i from 1 through 12 {
+//         @media (min-width: #{nth($p, 2)}) {
+//             .col-#{nth($p,1)}-#{$i}{
+//                 flex-basis: 100% / 12 * $i;
+//                 max-width: 100% / 12 * $i;
+//                 padding: 0 15px;
+//                 margin: 0 auto;
+//             }
+//         }
+//     }
+// }
