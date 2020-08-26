@@ -4,30 +4,30 @@ const babel = require('gulp-babel');
 const pug = require('gulp-pug');
 
 const sassTask = function () {
-    return src('ProjectHKII-Website/src/sass/**/*.scss')
+    return src('ProjectHKIII-Website/src/sass/**/*.scss')
         .pipe(sass().on('error', sass.logError))
-        .pipe(dest('ProjectHKII-Website/dist/css'))
+        .pipe(dest('ProjectHKIII-Website/dist/css'))
 };
 
 const jsTask = function () {
-    return src('ProjectHKII-Website/src/js/**/*.js')
+    return src('ProjectHKIII-Website/src/js/**/*.js')
         .pipe(babel({
             presets: ['@babel/env']
         }))
-        .pipe(dest('ProjectHKII-Website/dist/js'))
+        .pipe(dest('ProjectHKIII-Website/dist/js'))
 };
 
 const pugTask = function () {
-    return src('ProjectHKII-Website/src/view/**/*.pug')
+    return src('ProjectHKIII-Website/src/view/**/*.pug')
     .pipe(pug(
         { pretty: true}
     ))
 
-    .pipe(dest('ProjectHKII-Website/dist/html'))
+    .pipe(dest('ProjectHKIII-Website/dist/html'))
 };
 
 function watchTask() {
-    watch(['ProjectHKII-Website/src/js/**/*.js', 'ProjectHKII-Website/src/sass/**/*.scss', 'ProjectHKII-Website/src/view/**/*.pug'],
+    watch(['ProjectHKIII-Website/src/js/**/*.js', 'ProjectHKIII-Website/src/sass/**/*.scss', 'ProjectHKIII-Website/src/view/**/*.pug'],
         parallel(sassTask, jsTask, pugTask))
 };
 
