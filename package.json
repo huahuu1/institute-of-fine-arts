@@ -1,0 +1,37 @@
+{
+  "name": "hvcgteam-1-framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/hvcgtraining/hvcgteam-1-framework.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/hvcgtraining/hvcgteam-1-framework/issues"
+  },
+  "homepage": "https://gitlab.com/hvcgtraining/hvcgteam-1-framework#readme",
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-watch": "^5.0.1"
+  },
+  "dependencies": {
+    "gulp-cli": "^2.2.0",
+    "jquery": "^3.4.1",
+    "owl.carousel": "^2.3.4",
+    "pug": "^2.0.4",
+    "pug-cli": "^1.0.0-alpha6",
+    "slick": "^1.12.2",
+    "slick-carousel": "^1.8.1"
+  }
+}
