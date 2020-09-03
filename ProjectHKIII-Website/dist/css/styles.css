@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@400;500;700;900&family=Roboto:wght@300;400;500;700&display=swap");
 html, body {
   width: 100%;
   height: auto;
@@ -80,28 +80,36 @@ body, td, th, input, button {
 section.slider {
   position: relative;
   margin-bottom: 10rem;
-  height: 900px; }
+  height: 971px; }
   section.slider .owl-loading {
     opacity: 1; }
   section.slider .slider-main {
-    height: 900px; }
-    section.slider .slider-main .owl-stage-outer .owl-stage .owl-item .owl-lazy {
-      height: 900px;
-      width: auto;
-      background-position: 0% 0%;
-      background-size: cover !important;
-      background-repeat: no-repeat !important;
-      zoom: 1.07; }
-    section.slider .slider-main .owl-stage-outer .overlay {
-      background-color: rgba(190, 190, 190, 0.2);
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      height: 100%;
-      left: -1px;
-      right: -1px;
-      transition: transform .3s, opacity .6s;
-      pointer-events: none; }
+    height: 100%; }
+    section.slider .slider-main .owl-stage-outer {
+      height: 100%; }
+      section.slider .slider-main .owl-stage-outer .owl-stage {
+        height: 100%; }
+        section.slider .slider-main .owl-stage-outer .owl-stage .owl-item {
+          height: 100%; }
+          section.slider .slider-main .owl-stage-outer .owl-stage .owl-item .item {
+            height: 100%; }
+            section.slider .slider-main .owl-stage-outer .owl-stage .owl-item .item .owl-lazy {
+              height: 100%;
+              width: auto;
+              background-position: 0% 0%;
+              background-size: cover !important;
+              background-repeat: no-repeat !important;
+              zoom: 1.07; }
+      section.slider .slider-main .owl-stage-outer .overlay {
+        background-color: rgba(190, 190, 190, 0.2);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        left: -1px;
+        right: -1px;
+        transition: transform .3s, opacity .6s;
+        pointer-events: none; }
     section.slider .slider-main .owl-nav .owl-prev {
       position: absolute;
       top: 0;
@@ -142,7 +150,7 @@ section.slider {
         color: #ff0000; }
     section.slider .slider-main .owl-dots {
       position: absolute;
-      left: 50%;
+      left: 49%;
       bottom: 0;
       transform: translate(-15%, -50%); }
       section.slider .slider-main .owl-dots .owl-dot {
@@ -157,12 +165,92 @@ section.slider {
       section.slider .slider-main .owl-dots .owl-dot.active span,
       section.slider .slider-main .owl-dots .owl-dot.active:hover span {
         background-color: #ee5b54; }
-  section.slider .slider-content {
+  section.slider .slider-content .slider-circle {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 999; }
+    z-index: 997; }
+    section.slider .slider-content .slider-circle img {
+      position: relative; }
+    section.slider .slider-content .slider-circle .slider-dot-image img {
+      animation: mover 1s infinite alternate;
+      position: absolute;
+      top: 56px;
+      left: 0; }
+  section.slider .slider-content .slider-text {
+    position: absolute;
+    z-index: 999;
+    top: 34%;
+    left: 34%;
+    text-align: center; }
+    section.slider .slider-content .slider-text span {
+      display: block; }
+    section.slider .slider-content .slider-text span:nth-child(1) {
+      color: #ee5b54;
+      font-family: "Montserrat",Arial,Helvetica,sans-serif;
+      font-size: 1.725rem;
+      font-weight: 600;
+      margin-bottom: 1.8rem; }
+    section.slider .slider-content .slider-text span:nth-child(2) {
+      color: #000;
+      font-family: "Playfair Display",Arial,Helvetica,sans-serif;
+      font-size: 7.725rem;
+      font-weight: 900;
+      margin-bottom: 2.4rem; }
+    section.slider .slider-content .slider-text span:nth-child(3) {
+      margin-bottom: 1.2rem; }
+    section.slider .slider-content .slider-text span:nth-child(4) {
+      margin-bottom: 3.5rem; }
+    section.slider .slider-content .slider-text span:nth-child(3),
+    section.slider .slider-content .slider-text span:nth-child(4) {
+      color: #000;
+      font-family: "Roboto",Arial,Helvetica,sans-serif;
+      font-size: 2.025rem;
+      font-weight: 300; }
+    section.slider .slider-content .slider-text .button-apply {
+      border-radius: 50px;
+      background-color: #ee5b54;
+      display: inline-block; }
+      section.slider .slider-content .slider-text .button-apply a.button-hover {
+        position: relative;
+        display: block;
+        z-index: 0;
+        padding: 1.5rem 3.61rem;
+        text-transform: uppercase;
+        border-radius: 50px;
+        transition: all .3s ease; }
+        section.slider .slider-content .slider-text .button-apply a.button-hover span {
+          color: #fff;
+          margin-bottom: 0;
+          font-family: "Montserrat",Arial,Helvetica,sans-serif;
+          font-size: 1.41rem;
+          font-weight: 600; }
+        section.slider .slider-content .slider-text .button-apply a.button-hover:hover {
+          box-shadow: 0 0 0 1px #ee5b54 inset; }
+          section.slider .slider-content .slider-text .button-apply a.button-hover:hover span {
+            color: #ee5b54; }
+          section.slider .slider-content .slider-text .button-apply a.button-hover:hover:before {
+            transform: scale(1); }
+        section.slider .slider-content .slider-text .button-apply a.button-hover:before {
+          content: "";
+          position: absolute;
+          z-index: -1;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: #fff;
+          border-radius: 50px;
+          box-shadow: 0 0 0 1px #ee5b54 inset;
+          transform: scale(0);
+          transition: all .3s ease; }
+
+@keyframes mover {
+  0% {
+    transform: translateY(0); }
+  100% {
+    transform: translateY(-10px); } }
   section.slider .owl-carousel .owl-item .owl-lazy:not([src]), section.slider .owl-carousel .owl-item .owl-lazy[src^=""] {
     max-height: none !important; }
   section.slider .banner-inner button.owl-prev,
