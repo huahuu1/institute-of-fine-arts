@@ -133,8 +133,9 @@ section.slider {
         .slider-text {
             position: absolute;
             z-index: 999;
-            top: 34%;
-            left: 34%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             text-align: center;
             span {
                 display: block;

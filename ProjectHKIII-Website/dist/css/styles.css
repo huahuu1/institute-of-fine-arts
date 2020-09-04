@@ -181,8 +181,9 @@ section.slider {
   section.slider .slider-content .slider-text {
     position: absolute;
     z-index: 999;
-    top: 34%;
-    left: 34%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center; }
     section.slider .slider-content .slider-text span {
       display: block; }
@@ -325,89 +326,92 @@ section.slider {
   #text-box-1 {
     width: 35%; } }
 
-.footer {
+footer .footer {
   padding: 0 3rem; }
-  .footer .line {
+  footer .footer .line {
     width: 100%;
     height: 3px;
     background-color: #262626;
     margin-top: 3rem; }
-  .footer .footer-content {
+  footer .footer .footer-content {
     padding-top: 4rem;
     padding-bottom: 4rem; }
-    .footer .footer-content .top-content {
+    footer .footer .footer-content .top-content {
       padding-bottom: 1.5rem; }
-      .footer .footer-content .top-content .company-info .title {
+      footer .footer .footer-content .top-content .company-info .title {
         padding-bottom: 2rem; }
-        .footer .footer-content .top-content .company-info .title .title-img {
-          width: 60%;
-          margin: 0 auto; }
-          .footer .footer-content .top-content .company-info .title .title-img img {
-            width: 16.5rem; }
-      .footer .footer-content .top-content .company-info .content .icon-box {
+        footer .footer .footer-content .top-content .company-info .title .title-text {
+          text-align: center; }
+          footer .footer .footer-content .top-content .company-info .title .title-text span {
+            font-size: 2.325rem;
+            font-family: "Playfair Display",Arial,Helvetica,sans-serif;
+            color: #181818;
+            font-weight: 900; }
+      footer .footer .footer-content .top-content .company-info .content .icon-box {
+        color: #ee5b54;
         font-size: 1.4rem; }
-        .footer .footer-content .top-content .company-info .content .icon-box .icon-box-text {
+        footer .footer .footer-content .top-content .company-info .content .icon-box .icon-box-text {
+          color: #191919;
           padding-left: 1.6rem;
           font-size: 1.6rem; }
-      .footer .footer-content .top-content .top-seller .title h3 {
-        text-transform: uppercase;
-        font-weight: 500;
-        color: #1c1c1c;
-        font-family: "Roboto Slab", sans-serif; }
-      .footer .footer-content .top-content .top-seller .content .content-item {
+      footer .footer .footer-content .top-content .company-location .title {
+        padding-bottom: 2rem; }
+        footer .footer .footer-content .top-content .company-location .title .title-text {
+          text-align: center; }
+          footer .footer .footer-content .top-content .company-location .title .title-text span {
+            font-size: 2.325rem;
+            font-family: "Playfair Display",Arial,Helvetica,sans-serif;
+            color: #181818;
+            font-weight: 900; }
+      footer .footer .footer-content .top-content .company-location .content .content-item {
         padding: 0 2px; }
-        .footer .footer-content .top-content .top-seller .content .content-item img {
-          width: 100%; }
-      .footer .footer-content .top-content .menu {
-        max-width: 18% !important; }
-        .footer .footer-content .top-content .menu .title h3 {
-          text-transform: uppercase;
-          font-weight: 500;
-          color: #1c1c1c;
-          font-family: "Roboto Slab", sans-serif; }
-        .footer .footer-content .top-content .menu .content .icon-box {
-          padding: .3rem 0;
-          cursor: pointer; }
-          .footer .footer-content .top-content .menu .content .icon-box:hover .icon-box-text a {
-            color: #026DCF; }
-          .footer .footer-content .top-content .menu .content .icon-box:hover .icon-box-img i {
-            color: #026DCF; }
-          .footer .footer-content .top-content .menu .content .icon-box .icon-box-img i {
-            font-size: 1.2rem;
-            margin-left: .5rem;
-            margin-right: 1.5rem;
-            transition: .2s all ease;
-            -webkit-transition: .2s all ease;
-            -moz-transition: .2s all ease;
-            -ms-transition: .2s all ease;
-            -o-transition: .2s all ease; }
-          .footer .footer-content .top-content .menu .content .icon-box .icon-box-text a {
-            font-size: 1.5rem;
-            color: #666666;
-            text-decoration: none;
-            transition: .2s all ease;
-            -webkit-transition: .2s all ease;
-            -moz-transition: .2s all ease;
-            -ms-transition: .2s all ease;
-            -o-transition: .2s all ease; }
-      .footer .footer-content .top-content .list-product {
+        footer .footer .footer-content .top-content .company-location .content .content-item iframe {
+          height: 250px;
+          width: 550px; }
+      footer .footer .footer-content .top-content .sponcors .title {
+        padding-bottom: 2rem; }
+        footer .footer .footer-content .top-content .sponcors .title .title-text {
+          text-align: center; }
+          footer .footer .footer-content .top-content .sponcors .title .title-text span {
+            font-size: 2.325rem;
+            font-family: "Playfair Display",Arial,Helvetica,sans-serif;
+            color: #181818;
+            font-weight: 900; }
+      footer .footer .footer-content .top-content .sponcors .content .content-item {
+        padding: 0 2px;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+        padding-top: 1rem; }
+        footer .footer .footer-content .top-content .sponcors .content .content-item img {
+          height: auto;
+          width: 13rem; }
+        footer .footer .footer-content .top-content .sponcors .content .content-item:not(:nth-last-child(-n+2)):after {
+          content: ' ';
+          display: block;
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          height: 2px;
+          background-color: rgba(0, 0, 0, 0.3); }
+      footer .footer .footer-content .top-content .list-product {
         max-width: 32% !important;
         flex: 0 0 32% !important; }
-        .footer .footer-content .top-content .list-product .title h3 {
+        footer .footer .footer-content .top-content .list-product .title h3 {
           text-transform: uppercase;
           font-weight: 500;
           color: #1c1c1c;
           font-family: "Roboto Slab", sans-serif; }
-        .footer .footer-content .top-content .list-product .content .content-part {
+        footer .footer .footer-content .top-content .list-product .content .content-part {
           margin-right: 4rem; }
-          .footer .footer-content .top-content .list-product .content .content-part .icon-box {
+          footer .footer .footer-content .top-content .list-product .content .content-part .icon-box {
             padding: .3rem 0;
             cursor: pointer; }
-            .footer .footer-content .top-content .list-product .content .content-part .icon-box:hover .icon-box-text a {
+            footer .footer .footer-content .top-content .list-product .content .content-part .icon-box:hover .icon-box-text a {
               color: #026DCF; }
-            .footer .footer-content .top-content .list-product .content .content-part .icon-box:hover .icon-box-img i {
+            footer .footer .footer-content .top-content .list-product .content .content-part .icon-box:hover .icon-box-img i {
               color: #026DCF; }
-            .footer .footer-content .top-content .list-product .content .content-part .icon-box .icon-box-img i {
+            footer .footer .footer-content .top-content .list-product .content .content-part .icon-box .icon-box-img i {
               font-size: 1.2rem;
               margin-left: .5rem;
               margin-right: 1.5rem;
@@ -416,7 +420,7 @@ section.slider {
               -moz-transition: .2s all ease;
               -ms-transition: .2s all ease;
               -o-transition: .2s all ease; }
-            .footer .footer-content .top-content .list-product .content .content-part .icon-box .icon-box-text a {
+            footer .footer .footer-content .top-content .list-product .content .content-part .icon-box .icon-box-text a {
               font-size: 1.5rem;
               color: #666666;
               text-decoration: none;
@@ -425,26 +429,26 @@ section.slider {
               -moz-transition: .2s all ease;
               -ms-transition: .2s all ease;
               -o-transition: .2s all ease; }
-    .footer .footer-content .bottom-content .divider-line {
+    footer .footer .footer-content .bottom-content .divider-line {
       height: 1px;
       background-color: #e7e7e7;
       margin: 1.6rem 0; }
-    .footer .footer-content .bottom-content .social-network .title h3 {
+    footer .footer .footer-content .bottom-content .social-network .title h3 {
       text-transform: uppercase;
       font-weight: 500;
       color: #1c1c1c;
       font-family: "Roboto Slab", sans-serif; }
-    .footer .footer-content .bottom-content .social-network .content {
+    footer .footer .footer-content .bottom-content .social-network .content {
       margin-right: 5rem;
       justify-content: space-evenly; }
-      .footer .footer-content .bottom-content .social-network .content .icon-box {
+      footer .footer .footer-content .bottom-content .social-network .content .icon-box {
         padding: .3rem 0;
         cursor: pointer; }
-        .footer .footer-content .bottom-content .social-network .content .icon-box:hover .icon-box-text a {
+        footer .footer .footer-content .bottom-content .social-network .content .icon-box:hover .icon-box-text a {
           color: #026DCF; }
-        .footer .footer-content .bottom-content .social-network .content .icon-box:hover .icon-box-img i {
+        footer .footer .footer-content .bottom-content .social-network .content .icon-box:hover .icon-box-img i {
           color: #026DCF; }
-        .footer .footer-content .bottom-content .social-network .content .icon-box .icon-box-img i {
+        footer .footer .footer-content .bottom-content .social-network .content .icon-box .icon-box-img i {
           font-size: 2.5rem;
           font-weight: 500;
           margin-left: .5rem;
@@ -455,30 +459,30 @@ section.slider {
           -moz-transition: .2s all ease;
           -ms-transition: .2s all ease;
           -o-transition: .2s all ease; }
-    .footer .footer-content .bottom-content .payments .title h3 {
+    footer .footer .footer-content .bottom-content .payments .title h3 {
       text-transform: uppercase;
       font-weight: 500;
       color: #1c1c1c;
       font-family: "Roboto Slab", sans-serif; }
-    .footer .footer-content .bottom-content .payments .content {
+    footer .footer .footer-content .bottom-content .payments .content {
       margin-right: 5rem; }
-      .footer .footer-content .bottom-content .payments .content img {
+      footer .footer .footer-content .bottom-content .payments .content img {
         width: 27rem; }
-    .footer .footer-content .bottom-content .register {
+    footer .footer .footer-content .bottom-content .register {
       padding: 0; }
-      .footer .footer-content .bottom-content .register .wrapper-regiter {
+      footer .footer .footer-content .bottom-content .register .wrapper-regiter {
         align-items: center; }
-        .footer .footer-content .bottom-content .register .wrapper-regiter .register-text .title h3 {
+        footer .footer .footer-content .bottom-content .register .wrapper-regiter .register-text .title h3 {
           text-transform: uppercase;
           font-weight: 500;
           color: #1c1c1c;
           font-family: "Roboto Slab", sans-serif; }
-        .footer .footer-content .bottom-content .register .wrapper-regiter .register-text .content p {
+        footer .footer .footer-content .bottom-content .register .wrapper-regiter .register-text .content p {
           color: #666666;
           font-size: 1.4rem; }
-        .footer .footer-content .bottom-content .register .wrapper-regiter .register-button {
+        footer .footer .footer-content .bottom-content .register .wrapper-regiter .register-button {
           justify-content: center; }
-          .footer .footer-content .bottom-content .register .wrapper-regiter .register-button .btn a {
+          footer .footer .footer-content .bottom-content .register .wrapper-regiter .register-button .btn a {
             display: block;
             padding: 1rem 3rem;
             text-decoration: none;
@@ -486,7 +490,7 @@ section.slider {
             font-size: 1.5rem;
             font-weight: 500; }
 
-#backtoTop {
+footer #backtoTop {
   position: fixed;
   bottom: 20px;
   right: 46px;
@@ -501,12 +505,12 @@ section.slider {
   -moz-transition: all .3s ease;
   -ms-transition: all .3s ease;
   -o-transition: all .3s ease; }
-  #backtoTop:hover {
-    border-color: #ff0000;
-    background-color: #ff0000; }
-    #backtoTop:hover i {
+  footer #backtoTop:hover {
+    border-color: #ee5b54;
+    background-color: #ee5b54; }
+    footer #backtoTop:hover i {
       color: #fff; }
-  #backtoTop i {
+  footer #backtoTop i {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -624,3 +628,6 @@ section.header header .container .nav {
       font-weight: 600;
       padding: 0.5rem 1.5rem;
       text-decoration: none; }
+
+.login-page {
+  font-family: "Source Sans Pro",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol" !important; }
