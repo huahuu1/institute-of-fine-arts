@@ -4,18 +4,21 @@ section.competition {
         background-image: url("../assets/images/pattern.jpg");
         .title-icon {
             line-height: 1;
-            .icon-trophy {
-                position: relative;
-                color: #f6bf26;
-                font-size: 10rem;
-                .icon-medal {
-                    position: absolute;
-                    color: #2e296b;
-                    font-size: 5rem;
-                    top: 26%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                }
+            // .icon-trophy {
+            //     position: relative;
+            //     color: #f6bf26;
+            //     font-size: 10rem;
+            //     .icon-medal {
+            //         position: absolute;
+            //         color: #2e296b;
+            //         font-size: 5rem;
+            //         top: 26%;
+            //         left: 50%;
+            //         transform: translate(-50%, -50%);
+            //     }
+            // }
+            img {
+                width: 20rem;
             }
         }
         .title-text {
