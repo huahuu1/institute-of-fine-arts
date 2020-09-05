@@ -1,0 +1,25 @@
+section.competition .comp-title {
+  text-align: center;
+  background-image: url("../assets/images/pattern.jpg"); }
+  section.competition .comp-title .title-icon {
+    line-height: 1; }
+    section.competition .comp-title .title-icon .icon-trophy {
+      position: relative;
+      color: #f6bf26;
+      font-size: 10rem; }
+      section.competition .comp-title .title-icon .icon-trophy .icon-medal {
+        position: absolute;
+        color: #2e296b;
+        font-size: 5rem;
+        top: 26%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+  section.competition .comp-title .title-text span {
+    font-family: "Playfair Display",Arial,Helvetica,sans-serif;
+    font-size: 4.5rem;
+    font-weight: 900; }
+
+section.competition .comp-img {
+  text-align: center; }
+  section.competition .comp-img img {
+    width: 80%; }
