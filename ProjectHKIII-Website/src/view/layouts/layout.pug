@@ -5,6 +5,10 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Document
+        block scripts
+            script(type='text/javascript' src='https://code.jquery.com/jquery-latest.js')
+            script(src='../../../../node_modules/shufflejs/dist/shuffle.js')
+            script(type='text/javascript' src='../../../../node_modules/lazysizes/lazysizes.min.js')
         //- Bootstrap 4 - CSS
         link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh' crossorigin='anonymous')
         //- Font Awesome - CSS
@@ -34,4 +38,5 @@ html(lang="en")
         script(type="text/javascript" src="../../js/navigation.js")
         script(type="text/javascript" src="../../js/slider.js")
         script(type="text/javascript" src="../../js/back-to-top.js")
+        script(type="text/javascript" src="../../js/gallery.js")
 
