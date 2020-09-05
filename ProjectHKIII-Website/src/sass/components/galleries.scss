@@ -3,7 +3,7 @@
 	width: 93%;
 	margin: auto;
   }
-  
+
   /* Bootstrap-style columns */
   .column {
 	position: relative;
@@ -11,25 +11,25 @@
 	min-height: 1px;
 	width: 33.33%;
 	padding-left: 4px;
-	padding-right: 4px;	
+	padding-right: 4px;
 	/* Space between tiles */
 	margin-top: 15px;
   }
-  
+
   .col-span {
 	width: 50%;
   }
-  
+
   .my-sizer-element {
 	width: 8.33333%;
   }
-  
+
   /* default styles so shuffle doesn't have to set them (it will if they're missing) */
   .my-shuffle {
 	position: relative;
 	overflow: hidden;
   }
-  
+
   /* Ensure images take up the same space when they load */
   /* https://vestride.github.io/Shuffle/images */
   .aspect {
@@ -38,7 +38,7 @@
 	height: 0;
 	padding-bottom: 100%;
 	overflow: hidden;
-  } 
+  }
 
   .aspect__inner {
 	position: absolute;
@@ -56,37 +56,37 @@
   .aspect--16x9 {
 	padding-bottom: 56.25%;
   }
-  
+
   .aspect--9x80 {
 	padding-bottom: calc(112.5% + 8px);
   }
-  
+
   .aspect--32x9 {
 	padding-bottom: calc(28.125% - 3px);
   }
-  
-  img {
-	display: block;
-	width: 100%;
-	
-	max-width: none;
-	height: 100%;
-	object-fit: cover;
-  }  
-  
+
+//   img {
+// 	display: block;
+// 	width: 100%;
+
+// 	max-width: none;
+// 	height: 100%;
+// 	object-fit: cover;
+//   }
+
   /* Small reset */
   *,
   ::before,
   ::after {
 	box-sizing: border-box;
   }
-  
+
   figure {
 	margin: 0;
 	padding: 0;
   }
 
-  //DESIGN PAINTING  
+  //DESIGN PAINTING
   @import "https://fonts.googleapis.com/css?family=Noto+Sans&display=swap"; //p
   .dcontent{
 	  border: 1px solid #55342B;
@@ -97,18 +97,18 @@
 	  font-size: 14px;
 	  text-shadow: 0 0 1px #8f6d65;
   }
-  span.pmark{	  
+  span.pmark{
 	  float: right;
-  }  
+  }
   h1.dtitle{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 22px;
-	text-align: center;	
+	text-align: center;
 	text-shadow: 1px 1px 3px #8f6d65;
   }
-  
+
   p.ddescription{
-	font-family: 'Noto Sans', sans-serif;	
+	font-family: 'Noto Sans', sans-serif;
 	text-align: justify;
 	font-size: 13px;
 	display: block;
@@ -136,7 +136,7 @@
   .dposting h5 {
 	float: left;
   }
-  
+
   #dposting-icon {
 	border:1px solid ;
 	padding: 1px 6px;

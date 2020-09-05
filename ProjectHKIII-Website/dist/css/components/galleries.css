@@ -55,13 +55,6 @@
 .aspect--32x9 {
   padding-bottom: calc(28.125% - 3px); }
 
-img {
-  display: block;
-  width: 100%;
-  max-width: none;
-  height: 100%;
-  object-fit: cover; }
-
 /* Small reset */
 *,
 ::before,
