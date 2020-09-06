@@ -1,38 +1,127 @@
 section.competition {
-    background-image: url("../assets/images/pattern.jpg");
-    .comp-title {
-        text-align: center;
-        .title-icon {
-            line-height: 1;
-            // .icon-trophy {
-            //     position: relative;
-            //     color: #f6bf26;
-            //     font-size: 10rem;
-            //     .icon-medal {
-            //         position: absolute;
-            //         color: #2e296b;
-            //         font-size: 5rem;
-            //         top: 26%;
-            //         left: 50%;
-            //         transform: translate(-50%, -50%);
-            //     }
-            // }
-            img {
-                width: 20rem;
+    .container {
+        // background-image: url("../assets/images/pattern.jpg");
+        .comp-title {
+            text-align: center;
+            .title-icon {
+                line-height: 1;
+                // .icon-trophy {
+                //     position: relative;
+                //     color: #f6bf26;
+                //     font-size: 10rem;
+                //     .icon-medal {
+                //         position: absolute;
+                //         color: #2e296b;
+                //         font-size: 5rem;
+                //         top: 26%;
+                //         left: 50%;
+                //         transform: translate(-50%, -50%);
+                //     }
+                // }
+                img {
+                    margin-top: -2rem;
+                    width: 20rem;
+                }
+            }
+            .title-text {
+                line-height: 0;
+                margin-bottom: 5rem;
+                span {
+                    font-family: "Playfair Display",Arial,Helvetica,sans-serif;
+                    font-size: 4.5rem;
+                    font-weight: 900;
+                }
             }
         }
-        .title-text {
-            span {
-                font-family: "Playfair Display",Arial,Helvetica,sans-serif;
-                font-size: 4.5rem;
-                font-weight: 900;
+        .comps {
+            .comp-col {
+                .comp-img {
+                    // text-align: center;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .comp-name {
+                    margin-bottom: 2.2rem;
+                    margin-top: 2.8rem;
+                    // text-align: center;
+                    span {
+                        font-family: "Montserrat",Arial,Helvetica,sans-serif;
+                        font-size: 2.5rem;
+                        font-weight: 900;
+                    }
+                }
+                .comp-calendar {
+                    ul {
+                        display: flex;
+                        li {
+                            font-size: 1.5rem;
+                            i {
+                                margin-right: 1rem;
+                                color: #ee5b54;
+                            }
+                            span {
+                                text-transform: uppercase;
+                                margin-right: 2rem;
+                            }
+                        }
+                    }
+                }
+                // .comp-content {
+
+                // }
+                .comp-countdown {
+                    margin-top: 2rem;
+                }
+                .comp-button {
+                    text-align: center;
+                    margin-top: 4rem;
+                    .button-apply {
+                        border-radius: 50px;
+                        background-color: #ee5b54;
+                        display: inline-block;
+                        a.button-hover {
+                            position: relative;
+                            display: block;
+                            z-index: 0;
+                            padding: 1rem 2.2rem;
+                            text-transform: uppercase;
+                            border-radius: 50px;
+                            transition: all .3s ease;
+                            span {
+                                color: #fff;
+                                margin-bottom: 0;
+                                font-family: "Montserrat",Arial,Helvetica,sans-serif;
+                                font-size: 1.3rem;
+                                font-weight: 600;
+                            }
+                            &:hover {
+                                box-shadow: 0 0 0 1px #ee5b54 inset;
+                                span {
+                                    color: #ee5b54;
+                                }
+                                &:before {
+                                    transform: scale(1);
+                                }
+                            }
+                            &:before {
+                                content: "";
+                                position: absolute;
+                                z-index: -1;
+                                top: 0;
+                                left: 0;
+                                right: 0;
+                                bottom: 0;
+                                background: #fff;
+                                border-radius: 50px;
+                                box-shadow: 0 0 0 1px #ee5b54 inset;
+                                transform: scale(0);
+                                transition: all .3s ease;
+                            }
+                        }
+                    }
+                }
             }
-        }
-    }
-    .comp-img {
-        text-align: center;
-        img {
-            width: 80%;
         }
     }
 }
