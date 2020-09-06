@@ -72,6 +72,23 @@ section.competition {
                 // }
                 .comp-countdown {
                     margin-top: 2rem;
+                    .ClassyCountdownDemo {
+                        // width: 50rem;
+                        width: 40rem;
+                        margin: 0 auto;
+                        .ClassyCountdown-days {
+                            margin: 0 2rem 2rem 0;
+                        }
+                        .ClassyCountdown-hours {
+                            margin: 0 2rem 2rem 0;
+                        }
+                        .ClassyCountdown-minutes {
+                            margin: 0 2rem 2rem 0;
+                        }
+                        .ClassyCountdown-seconds {
+                            margin: 0 2rem 2rem 0;
+                        }
+                    }
                 }
                 .comp-button {
                     text-align: center;

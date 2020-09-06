@@ -37,6 +37,17 @@ section.competition .container .comps .comp-col .comp-calendar ul {
 
 section.competition .container .comps .comp-col .comp-countdown {
   margin-top: 2rem; }
+  section.competition .container .comps .comp-col .comp-countdown .ClassyCountdownDemo {
+    width: 40rem;
+    margin: 0 auto; }
+    section.competition .container .comps .comp-col .comp-countdown .ClassyCountdownDemo .ClassyCountdown-days {
+      margin: 0 2rem 2rem 0; }
+    section.competition .container .comps .comp-col .comp-countdown .ClassyCountdownDemo .ClassyCountdown-hours {
+      margin: 0 2rem 2rem 0; }
+    section.competition .container .comps .comp-col .comp-countdown .ClassyCountdownDemo .ClassyCountdown-minutes {
+      margin: 0 2rem 2rem 0; }
+    section.competition .container .comps .comp-col .comp-countdown .ClassyCountdownDemo .ClassyCountdown-seconds {
+      margin: 0 2rem 2rem 0; }
 
 section.competition .container .comps .comp-col .comp-button {
   text-align: center;
