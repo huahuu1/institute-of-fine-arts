@@ -1,9 +1,13 @@
 section.top-students {
-  height: 720px; }
+  height: 720px;
+  background-image: url("../assets/images/yellow_brush_strokes.jpg"); }
   section.top-students .owl-loading {
     opacity: 1; }
   section.top-students .student-slider {
-    height: 100%; }
+    height: 85%;
+    width: 80%;
+    margin: auto;
+    top: 9%; }
     section.top-students .student-slider .owl-stage-outer {
       height: 100%; }
       section.top-students .student-slider .owl-stage-outer .owl-stage {
@@ -14,47 +18,51 @@ section.top-students {
             height: 100%; }
             section.top-students .student-slider .owl-stage-outer .owl-stage .owl-item .item .owl-lazy {
               height: 100%;
-              width: auto;
-              background-position: 100% 0%;
-              background-size: cover !important;
-              background-repeat: no-repeat !important;
-              zoom: 1.07; }
-            section.top-students .student-slider .owl-stage-outer .owl-stage .owl-item .item .top-student .student-trophy {
-              position: absolute;
-              left: 50%;
-              top: 14%;
-              transform: translate(-50%, -50%); }
-              section.top-students .student-slider .owl-stage-outer .owl-stage .owl-item .item .top-student .student-trophy img {
-                width: 18rem; }
-            section.top-students .student-slider .owl-stage-outer .owl-stage .owl-item .item .top-student .student-img {
-              position: absolute;
-              left: 50%;
-              top: 14%;
-              transform: translate(-50%, -50%); }
-              section.top-students .student-slider .owl-stage-outer .owl-stage .owl-item .item .top-student .student-img img {
-                border-radius: 50%; }
-            section.top-students .student-slider .owl-stage-outer .owl-stage .owl-item .item .top-student .student-stars {
-              position: absolute;
-              left: 50%;
-              top: 28%;
-              transform: translate(-50%, -50%); }
-              section.top-students .student-slider .owl-stage-outer .owl-stage .owl-item .item .top-student .student-stars img {
-                width: 20rem; }
-            section.top-students .student-slider .owl-stage-outer .owl-stage .owl-item .item .top-student .student-name {
-              position: absolute;
-              left: 50%;
-              top: 34%;
-              transform: translate(-50%, -50%); }
-            section.top-students .student-slider .owl-stage-outer .owl-stage .owl-item .item .top-student .student-design {
-              position: absolute;
-              left: 50%;
-              top: 70%;
-              transform: translate(-50%, -50%);
-              height: 50rem;
-              width: 100%; }
-              section.top-students .student-slider .owl-stage-outer .owl-stage .owl-item .item .top-student .student-design img {
-                display: inline-block;
-                vertical-align: top; }
+              padding: 2rem; }
+              section.top-students .student-slider .owl-stage-outer .owl-stage .owl-item .item .owl-lazy .top-student {
+                position: relative;
+                height: 100%; }
+                section.top-students .student-slider .owl-stage-outer .owl-stage .owl-item .item .owl-lazy .top-student .wrapper-top-student {
+                  height: 100%; }
+                  section.top-students .student-slider .owl-stage-outer .owl-stage .owl-item .item .owl-lazy .top-student .wrapper-top-student .student-icon {
+                    position: relative;
+                    height: 33%; }
+                    section.top-students .student-slider .owl-stage-outer .owl-stage .owl-item .item .owl-lazy .top-student .wrapper-top-student .student-icon .student-trophy {
+                      position: absolute;
+                      left: 50%;
+                      top: 50%;
+                      transform: translate(-50%, -50%); }
+                      section.top-students .student-slider .owl-stage-outer .owl-stage .owl-item .item .owl-lazy .top-student .wrapper-top-student .student-icon .student-trophy img {
+                        width: 18rem; }
+                    section.top-students .student-slider .owl-stage-outer .owl-stage .owl-item .item .owl-lazy .top-student .wrapper-top-student .student-icon .student-img {
+                      position: absolute;
+                      left: 50%;
+                      top: 48%;
+                      transform: translate(-50%, -50%); }
+                      section.top-students .student-slider .owl-stage-outer .owl-stage .owl-item .item .owl-lazy .top-student .wrapper-top-student .student-icon .student-img img {
+                        border-radius: 50%; }
+                    section.top-students .student-slider .owl-stage-outer .owl-stage .owl-item .item .owl-lazy .top-student .wrapper-top-student .student-icon .student-stars {
+                      position: absolute;
+                      left: 50%;
+                      bottom: -43%;
+                      transform: translate(-50%, -50%); }
+                      section.top-students .student-slider .owl-stage-outer .owl-stage .owl-item .item .owl-lazy .top-student .wrapper-top-student .student-icon .student-stars img {
+                        width: 12rem; }
+                  section.top-students .student-slider .owl-stage-outer .owl-stage .owl-item .item .owl-lazy .top-student .wrapper-top-student .student-content {
+                    margin-top: 2rem; }
+                    section.top-students .student-slider .owl-stage-outer .owl-stage .owl-item .item .owl-lazy .top-student .wrapper-top-student .student-content .student-name {
+                      text-align: center; }
+                      section.top-students .student-slider .owl-stage-outer .owl-stage .owl-item .item .owl-lazy .top-student .wrapper-top-student .student-content .student-name span {
+                        text-transform: uppercase;
+                        font-family: "Playfair Display",Arial,Helvetica,sans-serif;
+                        font-weight: 700; }
+                    section.top-students .student-slider .owl-stage-outer .owl-stage .owl-item .item .owl-lazy .top-student .wrapper-top-student .student-content .student-design {
+                      height: 50rem;
+                      width: 100%;
+                      margin-top: 2rem !important; }
+                      section.top-students .student-slider .owl-stage-outer .owl-stage .owl-item .item .owl-lazy .top-student .wrapper-top-student .student-content .student-design img {
+                        display: inline-block;
+                        vertical-align: top; }
     section.top-students .student-slider .owl-dots {
       position: absolute;
       left: 50%;
