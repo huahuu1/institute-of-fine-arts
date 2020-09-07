@@ -36,10 +36,11 @@ footer .footer {
             color: #181818;
             font-weight: 900; }
       footer .footer .footer-content .top-content .company-location .content .content-item {
-        padding: 0 2px; }
+        padding: 0 2px;
+        margin: 0 auto; }
         footer .footer .footer-content .top-content .company-location .content .content-item iframe {
-          height: 250px;
-          width: 550px; }
+          height: 25rem;
+          width: 50rem; }
       footer .footer .footer-content .top-content .sponcors .title {
         padding-bottom: 2rem; }
         footer .footer .footer-content .top-content .sponcors .title .title-text {
@@ -168,7 +169,7 @@ footer #backtoTop {
   right: 46px;
   cursor: pointer;
   min-width: 1.5rem;
-  border: 2px solid #000;
+  border: 1px solid #000;
   border-radius: 50%;
   width: 4rem;
   height: 4rem;

@@ -1,0 +1,112 @@
+section.top-students {
+    height: 720px;
+    .owl-loading {
+        opacity: 1;
+    }
+    .student-slider {
+        height: 100%;
+        .owl-stage-outer {
+            height: 100%;
+            .owl-stage {
+                height: 100%;
+                .owl-item {
+                    height: 100%;
+                    .item {
+                        height: 100%;
+                        .owl-lazy {
+                            height: 100%;
+                            width: auto;
+                            background-position: 100% 0%;
+                            background-size: cover !important;
+                            background-repeat: no-repeat !important;
+                            zoom: 1.07;
+                        }
+                        .top-student {
+                            .student-trophy {
+                                position: absolute;
+                                left: 50%;
+                                top: 14%;
+                                transform: translate(-50%, -50%);
+                                img {
+                                    width: 18rem;
+                                }
+                            }
+                            .student-img {
+                                position: absolute;
+                                left: 50%;
+                                top: 14%;
+                                transform: translate(-50%, -50%);
+                                img {
+                                    // width: 10rem;
+                                    border-radius: 50%;
+                                }
+                            }
+                            .student-stars {
+                                position: absolute;
+                                left: 50%;
+                                top: 28%;
+                                transform: translate(-50%, -50%);
+                                img {
+                                    width: 20rem;
+                                }
+                            }
+                            .student-name {
+                                position: absolute;
+                                left: 50%;
+                                top: 34%;
+                                transform: translate(-50%, -50%);
+                                span {
+                                    // width: 20rem;
+                                }
+                            }
+                            .student-design {
+                                position: absolute;
+                                left: 50%;
+                                top: 70%;
+                                transform: translate(-50%, -50%);
+                                height: 50rem;
+                                width: 100%;
+                                img {
+                                    // height: 100%;
+                                    display: inline-block;
+                                    vertical-align: top;
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+        .owl-dots {
+            position: absolute;
+            left: 50%;
+            bottom: -8%;
+            transform: translate(-47%, -50%);
+            .owl-dot {
+                outline: none;
+                span {
+                    background-color: #fff;
+                    width: 1.2rem;
+                    height: 1.2rem;
+                    transition: all .2s ease;
+                }
+                &:hover {
+                    span {
+                        background-color: #ee5b54;
+                    }
+                }
+            }
+            .owl-dot.active,
+            .owl-dot.active:hover {
+                span {
+                    background-color: #ee5b54;
+                }
+            }
+        }
+    }
+}
+
+.owl-carousel .owl-item .owl-lazy:not([src]), .owl-carousel .owl-item .owl-lazy[src^=""] {
+    max-height: none !important;
+}
