@@ -4,7 +4,7 @@ $(document).ready(function(){
         loop:true,
         responsiveClass:true,
         dots:true,
-        autoplay:false,
+        autoplay:true,
         lazyLoad: true,
         responsive:{
             0:{

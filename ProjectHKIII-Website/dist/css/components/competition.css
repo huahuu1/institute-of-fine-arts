@@ -3,18 +3,15 @@ section.competition {
   padding-bottom: 4rem; }
   section.competition .container .comp-title {
     text-align: center; }
-    section.competition .container .comp-title .title-icon {
-      line-height: 1; }
-      section.competition .container .comp-title .title-icon img {
-        margin-top: -3rem;
-        width: 20rem; }
     section.competition .container .comp-title .title-text {
-      line-height: 0;
-      margin-bottom: 5rem; }
+      line-height: 1;
+      padding-top: 2rem;
+      margin-bottom: 4rem; }
       section.competition .container .comp-title .title-text span {
         font-family: "Playfair Display",Arial,Helvetica,sans-serif;
-        font-size: 4.5rem;
-        font-weight: 900; }
+        font-size: 3.5rem;
+        font-weight: 900;
+        color: #ee5b54; }
   section.competition .container .comps .comp-col .comp-img img {
     width: 100%; }
   section.competition .container .comps .comp-col .comp-name {
