@@ -6,6 +6,7 @@ $(document).ready(function(){
         dots:true,
         autoplay:true,
         lazyLoad: true,
+        slideBy: 2,
         responsive:{
             0:{
                 items:2,

@@ -80,7 +80,7 @@ section.header {
                                 position: absolute;
                                 pointer-events: none;
                                 background-color: #fff;
-                                min-width: 22rem;
+                                min-width: 18rem;
                                 top: 40px;
                                 box-shadow: 0 0 10px 0 rgba(204,204,204,.5);
                                 transition: opacity .2s;
@@ -98,14 +98,19 @@ section.header {
                                         background-color: rgba(0,0,0,.1);
                                     }
                                     a {
+                                        // text-align: center;
                                         cursor: pointer;
                                         font-size: 1.3rem;
                                         transition: all .3s auto;
                                         padding: 1rem 1.5rem;
                                         text-transform: uppercase;
-                                        font-weight: 600;
+                                        font-weight: 400;
                                         &:hover {
                                             color: #ee5b54;
+                                        }
+                                        span {
+                                            text-transform: uppercase;
+                                            margin-left: 1.5rem;
                                         }
                                     }
                                 }
