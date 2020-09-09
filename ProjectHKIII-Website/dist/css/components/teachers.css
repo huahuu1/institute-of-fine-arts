@@ -4,7 +4,7 @@ section.teachers {
   section.teachers .wrapper-teachers {
     height: 100%;
     background-image: url("../assets/images/yellow_brush_stroke_01.jpg");
-    background-position: -70% 10%; }
+    background-size: contain; }
     section.teachers .wrapper-teachers .teacher-slider {
       height: 100%;
       width: 80%;

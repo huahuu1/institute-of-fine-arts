@@ -1,12 +1,13 @@
 extends ../layouts/layout.pug
 block header
     include ../patials/navigation.pug
-    
+    //- include ../patials/slider.pug
+
 block main-content
-    //- Phat
-    include ../patials/galleries.pug    
+    block competition
+        include ../patials/exhibition.pug
 
 block footer
     include ../patials/footer.pug
 
-        
+
