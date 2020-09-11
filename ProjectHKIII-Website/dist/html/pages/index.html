@@ -5,14 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Document</title>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
-    <script src="../../../../node_modules/shufflejs/dist/shuffle.js"></script>
-    <script type="text/javascript" src="../../../../node_modules/lazysizes/lazysizes.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"/><link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,500,700&amp;display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+    <link rel="stylesheet" href="../../../dist/css/jquery.classycountdown.min.css"/>
     <link rel="stylesheet" href="../../../dist/css/styles.css"/>
   </head>
   <body>
@@ -24,40 +22,35 @@
               <div class="nav-logo"><a class="nav-brand" href="../../../dist/html/pages/index.html" alt="logo"><img src="../../assets/images/logo/Fine_Arts_Institute.png" alt="logo"/></a></div>
               <div class="nav-items justify-content-end">
                 <ul>
-                  <li class="nav-item"><a class="circle active" href="#"><span>home</span></a></li>
-                  <li class="nav-item"><a class="circle" href="#"><span>courses</span></a>
-                    <ul class="sub-nav">
-                      <li><a><span>sub</span></a></li>
-                      <li><a><span>sub</span></a></li>
-                      <li><a><span>sub</span></a></li>
-                      <li><a><span>sub</span></a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item"><a class="circle" href="#"><span>gallery</span></a>
-                    <ul class="sub-nav">
-                      <li><a><span>sub</span></a></li>
-                      <li><a><span>sub</span></a></li>
-                      <li><a><span>sub</span></a></li>
-                      <li><a><span>sub</span></a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item"><a class="circle" href="#"><span>admission information</span></a>
-                    <ul class="sub-nav">
-                      <li><a><span>sub</span></a></li>
-                      <li><a><span>sub</span></a></li>
-                      <li><a><span>sub</span></a></li>
-                      <li><a><span>sub</span></a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item"><a class="circle" href="#"><span>about us</span></a>
-                    <ul class="sub-nav mr-10">
-                      <li><a><span>sub</span></a></li>
-                      <li><a><span>sub</span></a></li>
-                      <li><a><span>sub</span></a></li>
-                      <li><a><span>sub</span></a></li>
-                    </ul>
-                  </li>
-                  <li><a class="btn btn-login btn-hv btn-hv-bs btn-hv-up" href="../../../dist/html/pages/login.html"><span>login</span></a></li>
+                  <li class="nav-item"><a class="circle active" href="../../../dist/html/pages/index.html"><span>home</span></a></li>
+                  <li class="nav-item"><a class="circle" href="../../../dist/html/pages/courses.html"><span>courses</span></a></li>
+                  <li class="nav-item"><a class="circle" href="../../../dist/html/pages/exhibition.html"><span>exhibition</span></a></li>
+                  <li class="nav-item"><a class="circle" href="../../../dist/html/pages/about-us.html"><span>about us</span></a></li>
+                  <li><a class="btn btn-login btn-hv btn-hv-bs btn-hv-up trigger-btn" href="#myModal" data-toggle="modal"><span>login</span></a></li>
+                  <!-- Modal HTML-->
+                  <div class="modal fade" id="myModal">
+                    <div class="modal-dialog modal-login">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title">Login</h4>
+                          <button class="close" type="button" data-dismiss="modal" aria-hidden="true">×</button>
+                        </div>
+                        <div class="modal-body">
+                          <form action="/examples/actions/confirmation.php" method="post"></form>
+                          <div class="form-group"><i class="fa fa-user"></i>
+                            <input class="form-control" type="text" placeholder="Username" required="required"/>
+                          </div>
+                          <div class="form-group"><i class="fa fa-lock"></i>
+                            <input class="form-control" type="password" placeholder="Password" required="required"/>
+                          </div>
+                          <div class="form-group">
+                            <input class="btn btn-primary btn-block btn-lg" type="submit" value="Login"/>
+                          </div>
+                        </div>
+                        <div class="modal-footer"><a href="#">Forgot Password?</a></div>
+                      </div>
+                    </div>
+                  </div>
                 </ul>
               </div>
             </div>
@@ -84,13 +77,199 @@
         </div>
       </section>
       <section class="competition">
-        <div class="comp-title">
-          <div class="title-icon"><img src="../../../dist/assets/images/trophy.png" alt=""/></div>
-          <div class="title-text"><span>Academy Competition</span></div>
+        <div class="container">
+          <div class="comp-title">
+            <div class="title-text"><span>Upcoming Competitions</span></div>
+          </div>
+          <div class="comps row">
+            <div class="comp-col col-lg-6">
+              <div class="comp-img"><img src="../../../dist/assets/images/30-poster-design-tips-opener.jpg" alt=""/></div>
+              <div class="comp-name"><span>Who is the best Artist?</span></div>
+              <div class="comp-calendar">
+                <ul>
+                  <li><i class="far fa-calendar-check"></i><span>sep 05, 2020</span></li>
+                  <li><i class="far fa-calendar-times"></i><span>sep 20, 2020</span></li>
+                </ul>
+              </div>
+              <div class="comp-countdown">
+                <div class="ClassyCountdownDemo" id="countdown1"></div>
+              </div>
+              <div class="comp-content"><span>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span><span>Impedit, debitis omnis obcaecati aliquid dicta voluptatum corporis eligendi quo accusantium hic distinctio quidem amet</span><span>soluta magni veniam sint expedita , esse nostrum</span></div>
+              <div class="comp-button">
+                <div class="button-apply"><a class="button-hover" href="#"><span>register now</span></a></div>
+              </div>
+            </div>
+            <div class="comp-col col-lg-6">
+              <div class="comp-img"><img src="../../../dist/assets/images/30-poster-design-tips-opener.jpg" alt=""/></div>
+              <div class="comp-name"><span>Who is the best Artist?</span></div>
+              <div class="comp-calendar">
+                <ul>
+                  <li><i class="far fa-calendar-check"></i><span>sep 05, 2020</span></li>
+                  <li><i class="far fa-calendar-times"></i><span>sep 20, 2020</span></li>
+                </ul>
+              </div>
+              <div class="comp-countdown">
+                <div class="ClassyCountdownDemo" id="countdown2"></div>
+              </div>
+              <div class="comp-content"><span>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span><span>Impedit, debitis omnis obcaecati aliquid dicta voluptatum corporis eligendi quo accusantium hic distinctio quidem amet</span><span>soluta magni veniam sint expedita , esse nostrum</span></div>
+              <div class="comp-button">
+                <div class="button-apply"><a class="button-hover" href="#"><span>register now</span></a></div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="comp-img"><img src="../../../dist/assets/images/30-poster-design-tips-opener.jpg" alt=""/></div>
-        <div class="comp-content"><span>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span><span>Impedit, debitis omnis obcaecati aliquid dicta voluptatum corporis eligendi quo accusantium hic distinctio quidem amet</span><span>soluta magni veniam sint expedita , esse nostrum</span></div>
-        <div class="comp-countdown"></div>
+      </section>
+      <section class="top-students">
+        <div class="top-students-icon"><img src="../../../dist/assets/images/trophy.png" alt=""/></div>
+        <div class="top-students-title"><span>Winners</span></div>
+        <div class="owl-carousel owl-theme student-slider">
+          <div class="item">
+            <div class="owl-lazy" data-src="../../../dist/assets/images/back-white.jpg">
+              <div class="top-student">
+                <div class="wrapper-top-student">
+                  <div class="student-icon">
+                    <div class="student-trophy"><img src="../../../dist/assets/images/jing.fm-laurel-wreath-clipart-1236472.png" alt=""/></div>
+                    <div class="student-img"><img src="../../../dist/assets/images/students/rebecca.jpg" alt=""/></div>
+                    <div class="student-stars"><img src="../../../dist/assets/images/stars.png" alt=""/></div>
+                  </div>
+                  <div class="student-content">
+                    <div class="student-name"><span>Rebecca Sr.Jen</span></div>
+                    <div class="student-design row">
+                      <div class="design-img col-lg-6"><img src="../../../dist/assets/images/Medium/adrianna-geo-1rBg5YSi00c-unsplash (1).jpg" alt=""/></div>
+                      <div class="design-description col-lg-6"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, soluta! Aliquid nisi minus quibusdam sed repellendus, explicabo tenetur voluptates facere voluptate fugit modi id illo praesentium molestias animi sapiente adipisci!</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="owl-lazy" data-src="../../../dist/assets/images/back-white.jpg">
+              <div class="top-student">
+                <div class="wrapper-top-student">
+                  <div class="student-icon">
+                    <div class="student-trophy"><img src="../../../dist/assets/images/jing.fm-laurel-wreath-clipart-1236472.png" alt=""/></div>
+                    <div class="student-img"><img src="../../../dist/assets/images/students/rebecca.jpg" alt=""/></div>
+                    <div class="student-stars"><img src="../../../dist/assets/images/stars.png" alt=""/></div>
+                  </div>
+                  <div class="student-content">
+                    <div class="student-name"><span>Rebecca Sr.Jen</span></div>
+                    <div class="student-design row">
+                      <div class="design-img col-lg-6"><img src="../../../dist/assets/images/Medium/adrianna-geo-1rBg5YSi00c-unsplash (1).jpg" alt=""/></div>
+                      <div class="design-description col-lg-6"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, soluta! Aliquid nisi minus quibusdam sed repellendus, explicabo tenetur voluptates facere voluptate fugit modi id illo praesentium molestias animi sapiente adipisci!</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="owl-lazy" data-src="../../../dist/assets/images/back-white.jpg">
+              <div class="top-student">
+                <div class="wrapper-top-student">
+                  <div class="student-icon">
+                    <div class="student-trophy"><img src="../../../dist/assets/images/jing.fm-laurel-wreath-clipart-1236472.png" alt=""/></div>
+                    <div class="student-img"><img src="../../../dist/assets/images/students/rebecca.jpg" alt=""/></div>
+                    <div class="student-stars"><img src="../../../dist/assets/images/stars.png" alt=""/></div>
+                  </div>
+                  <div class="student-content">
+                    <div class="student-name"><span>Rebecca Sr.Jen</span></div>
+                    <div class="student-design row">
+                      <div class="design-img col-lg-6"><img src="../../../dist/assets/images/Medium/adrianna-geo-1rBg5YSi00c-unsplash (1).jpg" alt=""/></div>
+                      <div class="design-description col-lg-6"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, soluta! Aliquid nisi minus quibusdam sed repellendus, explicabo tenetur voluptates facere voluptate fugit modi id illo praesentium molestias animi sapiente adipisci!</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="teachers row">
+        <div class="wrapper-teachers col-lg-6">
+          <div class="owl-carousel owl-theme teacher-slider">
+            <div class="item">
+              <div class="teacher-content">
+                <div class="teacher-img"><img src="../../../dist/assets/images/teachers/teacher1.jpg" alt=""/></div>
+                <div class="teacher-quote">
+                  <blockquote>
+                    <q>The Tabula drawing school in Greenpoint NY is a MUST for anyone interested in bettering their skills.</q>
+                  </blockquote>
+                </div>
+                <div class="teacher-name"><span>RICARDO LOGAN</span><span>Teacher</span></div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="teacher-content">
+                <div class="teacher-img"><img src="../../../dist/assets/images/teachers/teacher1.jpg" alt=""/></div>
+                <div class="teacher-quote">
+                  <blockquote>
+                    <q>The Tabula drawing school in Greenpoint NY is a MUST for anyone interested in bettering their skills.</q>
+                  </blockquote>
+                </div>
+                <div class="teacher-name"><span>RICARDO LOGAN</span><span>Teacher</span></div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="teacher-content">
+                <div class="teacher-img"><img src="../../../dist/assets/images/teachers/teacher1.jpg" alt=""/></div>
+                <div class="teacher-quote">
+                  <blockquote>
+                    <q>The Tabula drawing school in Greenpoint NY is a MUST for anyone interested in bettering their skills.</q>
+                  </blockquote>
+                </div>
+                <div class="teacher-name"><span>RICARDO LOGAN</span><span>Teacher</span></div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="teacher-content">
+                <div class="teacher-img"><img src="../../../dist/assets/images/teachers/teacher1.jpg" alt=""/></div>
+                <div class="teacher-quote">
+                  <blockquote>
+                    <q>The Tabula drawing school in Greenpoint NY is a MUST for anyone interested in bettering their skills.</q>
+                  </blockquote>
+                </div>
+                <div class="teacher-name"><span>RICARDO LOGAN</span><span>Teacher</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper-about col-lg-6">
+          <div class="about-page"><span>about us</span></div>
+          <div class="about-title"><span></span>Tabula<br/> art school</div>
+          <div class="about-text"><span>Twee echo park celiac YOLO dreamcatcher bushwick. Pitchfork fam tousled sustainable mumblecore tote bag trust fund tacos organic four dollar toast kickstarter pork belly.</span></div>
+          <div class="about-button"><a class="button-hover" href="#"><span>view more</span></a></div>
+        </div>
+      </section>
+      <section class="count-up">
+        <div class="wrapper-countup">
+          <div class="container">
+            <div class="count-content">
+              <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                  <div class="counter-list"><i class="fas fa-palette"></i><span class="counter">2500</span>
+                    <p>Designs</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                  <div class="counter-list"><i class="fas fa-user-graduate"></i><span class="counter">3300</span>
+                    <p>Students</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                  <div class="counter-list"><i class="fa fa-trophy"></i><span class="counter">20</span>
+                    <p>Winners</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                  <div class="counter-list"><i class="fas fa-images"></i><span class="counter">10</span>
+                    <p>Exhibition</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <footer class="footer-wrapper">
         <section class="footer">
@@ -144,15 +323,24 @@
         <div id="backtoTop"><i class="fas fa-chevron-up"></i></div>
       </footer>
     </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="https://unpkg.com/shufflejs@5"></script>
     <script type="text/javascript" src="../../js/index.js"></script>
     <script type="text/javascript" src="../../js/navigation.js"></script>
     <script type="text/javascript" src="../../js/slider.js"></script>
     <script type="text/javascript" src="../../js/back-to-top.js"></script>
-    <script type="text/javascript" src="../../js/gallery.js"></script>
+    <script src="http://benalman.com/code/projects/jquery-throttle-debounce/jquery.ba-throttle-debounce.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery.knob.js"></script>
+    <script type="text/javascript" src="../../js/jquery.classycountdown.min.js"></script>
+    <script type="text/javascript" src="../../js/countdown-timer.js"></script>
+    <script type="text/javascript" src="../../js/top-students.js"></script>
+    <script type="text/javascript" src="../../js/jquery.countup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="../../js/count-up.js"></script>
+    <script type="text/javascript" src="../../js/teachers.js"></script>
+    <script type="text/javascript" src="../../js/up-load.js"></script>
+    <script type="text/javascript" src="../../js/login.js"></script>
   </body>
 </html>

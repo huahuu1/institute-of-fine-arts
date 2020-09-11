@@ -9,73 +9,89 @@ section.header
                     .nav-items.justify-content-end
                         ul
                             li.nav-item
-                                a.circle.active(href="#")
+                                a.circle.active(href="../../../dist/html/pages/index.html")
                                     span home
                             li.nav-item
-                                a.circle(href="#")
+                                a.circle(href="../../../dist/html/pages/courses.html")
                                     span courses
-                                ul.sub-nav
-                                    li
-                                        a
-                                            span sub
-                                    li
-                                        a
-                                            span sub
-                                    li
-                                        a
-                                            span sub
-                                    li
-                                        a
-                                            span sub
+                                //- ul.sub-nav
+                                //-     li
+                                //-         a(href="")
+                                //-             span semester I
+                                //-     li
+                                //-         a
+                                //-             span semester II
+                                //-     li
+                                //-         a
+                                //-             span semester III
                             li.nav-item
-                                a.circle(href="#")
-                                    span gallery
-                                ul.sub-nav
-                                    li
-                                        a
-                                            span sub
-                                    li
-                                        a
-                                            span sub
-                                    li
-                                        a
-                                            span sub
-                                    li
-                                        a
-                                            span sub
+                                a.circle(href="../../../dist/html/pages/exhibition.html")
+                                    span exhibition
+                                //- ul.sub-nav
+                                //-     li
+                                //-         a
+                                //-             span sub
+                                //-     li
+                                //-         a
+                                //-             span sub
+                                //-     li
+                                //-         a
+                                //-             span sub
+                                //-     li
+                                //-         a
+                                //-             span sub
+                            //- li.nav-item
+                            //-     a.circle(href="#")
+                            //-         span admission information
+                            //-     ul.sub-nav
+                            //-         li
+                            //-             a
+                            //-                 span sub
+                            //-         li
+                            //-             a
+                            //-                 span sub
+                            //-         li
+                            //-             a
+                            //-                 span sub
+                            //-         li
+                            //-             a
+                            //-                 span sub
                             li.nav-item
-                                a.circle(href="#")
-                                    span admission information
-                                ul.sub-nav
-                                    li
-                                        a
-                                            span sub
-                                    li
-                                        a
-                                            span sub
-                                    li
-                                        a
-                                            span sub
-                                    li
-                                        a
-                                            span sub
-                            li.nav-item
-                                a.circle(href="#")
+                                a.circle(href="../../../dist/html/pages/about-us.html")
                                     span about us
-                                ul.sub-nav.mr-10
-                                    li
-                                        a
-                                            span sub
-                                    li
-                                        a
-                                            span sub
-                                    li
-                                        a
-                                            span sub
-                                    li
-                                        a
-                                            span sub
+                                //- ul.sub-nav.mr-10
+                                //-     li
+                                //-         a
+                                //-             span sub
+                                //-     li
+                                //-         a
+                                //-             span sub
+                                //-     li
+                                //-         a
+                                //-             span sub
+                                //-     li
+                                //-         a
+                                //-             span sub
                             li
-                                a.btn.btn-login.btn-hv.btn-hv-bs.btn-hv-up(href="../../../dist/html/pages/login.html")
+                                a.btn.btn-login.btn-hv.btn-hv-bs.btn-hv-up.trigger-btn(href="#myModal", data-toggle="modal")
                                     span login
+                            // Modal HTML
+                            #myModal.modal.fade
+                                .modal-dialog.modal-login
+                                    .modal-content
+                                        .modal-header
+                                            h4.modal-title Login
+                                            button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+                                        .modal-body
+                                            form(action='/examples/actions/confirmation.php', method='post')
+                                            .form-group
+                                                i.fa.fa-user
+                                                input.form-control(type='text', placeholder='Username', required='required')
+                                            .form-group
+                                                i.fa.fa-lock
+                                                input.form-control(type='password', placeholder='Password', required='required')
+                                            .form-group
+                                                input.btn.btn-primary.btn-block.btn-lg(type='submit', value='Login')
+                                        .modal-footer
+                                            a(href='#') Forgot Password?
 

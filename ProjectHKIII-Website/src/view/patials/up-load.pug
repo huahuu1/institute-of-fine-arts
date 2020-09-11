@@ -1,0 +1,68 @@
+section.up-load.row
+    .file-upload.col-lg-6
+        button.file-upload-btn(type='button' onclick="$('.file-upload-input').trigger( 'click' )") Add Image
+        .image-upload-wrap
+            input.file-upload-input(type='file' onchange='readURL(this);' accept='image/*')
+            .drag-text
+                h3 Drag and drop a file or select add Image
+        .file-upload-content
+            img.file-upload-image(src='#' alt='your image')
+            .image-title-wrap
+                button.remove-image(type='button' onclick='removeUpload()')
+                    | Remove&ensp;
+                    span.image-title Uploaded Image
+    .file-description.col-lg-6
+        .des-content
+            .des-title
+                span Design Name:
+            input.img-title.form-control.form-control-lg
+            .des-title
+                span Description:
+            textarea#img-description.form-control.form-control-lg(name='short_description', cols='30', rows='11')
+        .button-upload
+            a.button-hover(href="#")
+                span Upload
+    .files-uploaded.col-lg-12
+        .files-uploaded-title
+            span Files Uploaded
+        .files-uploaded-content.row
+            .img-uploaded.col-lg-6
+                .img-wrapper.row
+                    .img-content.col-lg-6
+                        img(src="../../../dist/assets/images/Medium/show-slider-img-3.jpg", alt="")
+                    .img-text.col-lg-6
+                        .img-des
+                            span Mar 15 2020
+                            span abstract wireframe
+                            span Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi nisi iure voluptatibus saepe exercitationem dolor rem soluta hic? Quos, voluptatem nihil. Laborum, numquam. Tempora voluptatem recusandae autem magnam natus similique!
+                            a.button-hover(href="#")
+                                span Update
+            .img-uploaded.col-lg-6
+                .img-wrapper.row
+                    .img-content.col-lg-6
+                        img(src="../../../dist/assets/images/Medium/show-slider-img-3.jpg", alt="")
+                    .img-text.col-lg-6
+                        .img-des
+                            span Mar 15 2020
+                            span abstract wireframe
+                            span Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi nisi iure voluptatibus saepe exercitationem dolor rem soluta hic? Quos, voluptatem nihil. Laborum, numquam. Tempora voluptatem recusandae autem magnam natus similique!
+                            a.button-hover(href="#")
+                                span Update
+            .img-uploaded.col-lg-6
+                .img-wrapper.row
+                    .img-content.col-lg-6
+                        img(src="../../../dist/assets/images/Medium/show-slider-img-3.jpg", alt="")
+                    .img-text.col-lg-6
+                        .img-des
+                            span Mar 15 2020
+                            span abstract wireframe
+                            span Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi nisi iure voluptatibus saepe exercitationem dolor rem soluta hic? Quos, voluptatem nihil. Laborum, numquam. Tempora voluptatem recusandae autem magnam natus similique!
+                            a.button-hover(href="#")
+                                span Update
+
+
+
+
+
+
+

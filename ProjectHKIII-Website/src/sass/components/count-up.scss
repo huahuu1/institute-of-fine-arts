@@ -1,0 +1,43 @@
+.count-up {
+    height: 26rem;
+    .wrapper-countup {
+        height: 100%;
+        background-image: url("../assets/images/pattern.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        .container {
+            height: 100%;
+            .count-content {
+                height: 100%;
+                .row {
+                    height: 100%;
+                    align-items: center;
+                    .counter-list {
+                        text-align: center;
+                        i {
+                            display: block;
+                            color: #ee5b54;
+                            font-size: 5rem;
+                        }
+                        span {
+                            display: block;
+                            text-transform: uppercase;
+                            font-family: "Playfair Display",Arial,Helvetica,sans-serif;
+                            font-weight: 700;
+                            font-size: 4.5rem;
+                            margin-top: .2rem;
+                        }
+                        p {
+                            text-transform: uppercase;
+                            font-family: "Montserrat",Arial,Helvetica,sans-serif;
+                            color: #ee5b54;
+                            font-size: 1.5rem;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

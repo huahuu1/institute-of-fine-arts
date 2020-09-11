@@ -5,4 +5,16 @@ $(function() {
       // add class to the one we clicked
       $(this).addClass("active");
     });
+
+    $(document).ready(function() {
+        $("[href]").each(function() {
+            if (this.href == window.location.href) {
+                if ($("a.circle").hasClass("active")) {
+                    $("a.circle").removeClass("active");
+                }
+                $(this).addClass("active");
+            }
+        });
+    });
   });
+

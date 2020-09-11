@@ -1,17 +1,101 @@
 section.competition
-    .comp-title
-        .title-icon
-            //- .icon-trophy
-            //-     i.fas.fa-trophy
-            //-     .icon-medal
-            //-         i.fas.fa-medal
-            img(src="../../../dist/assets/images/trophy.png", alt="")
-        .title-text
-            span Academy Competition
-    .comp-img
-        img(src="../../../dist/assets/images/30-poster-design-tips-opener.jpg", alt="")
-    .comp-content
-        span Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-        span Impedit, debitis omnis obcaecati aliquid dicta voluptatum corporis eligendi quo accusantium hic distinctio quidem amet
-        span soluta magni veniam sint expedita , esse nostrum
-    .comp-countdown
+    .container
+        .comp-title
+            //- .title-icon
+            //-     img(src="../../../dist/assets/images/trophy.png", alt="")
+            .title-text
+                span Upcoming Competitions
+        .comps.row
+            .comp-col.col-lg-6
+                .comp-img
+                    img(src="../../../dist/assets/images/30-poster-design-tips-opener.jpg", alt="")
+                .comp-name
+                    span Who is the best Artist?
+                .comp-calendar
+                    ul
+                        li
+                            i.far.fa-calendar-check
+                            span sep 05, 2020
+                        li
+                            i.far.fa-calendar-times
+                            span sep 20, 2020
+                .comp-countdown
+                    #countdown1.ClassyCountdownDemo
+                .comp-content
+                    span Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    span Impedit, debitis omnis obcaecati aliquid dicta voluptatum corporis eligendi quo accusantium hic distinctio quidem amet
+                    span soluta magni veniam sint expedita , esse nostrum
+                .comp-button
+                    .button-apply
+                        a.button-hover(href="#")
+                            span register now
+            .comp-col.col-lg-6
+                .comp-img
+                    img(src="../../../dist/assets/images/30-poster-design-tips-opener.jpg", alt="")
+                .comp-name
+                    span Who is the best Artist?
+                .comp-calendar
+                    ul
+                        li
+                            i.far.fa-calendar-check
+                            span sep 05, 2020
+                        li
+                            i.far.fa-calendar-times
+                            span sep 20, 2020
+                .comp-countdown
+                    #countdown2.ClassyCountdownDemo
+                .comp-content
+                    span Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    span Impedit, debitis omnis obcaecati aliquid dicta voluptatum corporis eligendi quo accusantium hic distinctio quidem amet
+                    span soluta magni veniam sint expedita , esse nostrum
+                .comp-button
+                    .button-apply
+                        a.button-hover(href="#")
+                            span register now
+
+//- script.
+    $('#countdown2').ClassyCountdown({
+        end: parseInt(new Date("2020-09-30") / 1000),
+        now: parseInt(new Date("2020-09-07") / 1000),
+        labels: true,
+        style: {
+            element: "",
+            textResponsive: .5,
+            days: {
+                gauge: {
+                    thickness: .01,
+                    bgColor: "rgba(0,0,0,0.05)",
+                    fgColor: "#1abc9c"
+                },
+                textCSS: 'font-family:\'Open Sans\'; font-size:25px; font-weight:300; color:#34495e;'
+            },
+            hours: {
+                gauge: {
+                    thickness: .01,
+                    bgColor: "rgba(0,0,0,0.05)",
+                    fgColor: "#2980b9"
+                },
+                textCSS: 'font-family:\'Open Sans\'; font-size:25px; font-weight:300; color:#34495e;'
+            },
+            minutes: {
+                gauge: {
+                    thickness: .01,
+                    bgColor: "rgba(0,0,0,0.05)",
+                    fgColor: "#8e44ad"
+                },
+                textCSS: 'font-family:\'Open Sans\'; font-size:25px; font-weight:300; color:#34495e;'
+            },
+            seconds: {
+                gauge: {
+                    thickness: .01,
+                    bgColor: "rgba(0,0,0,0.05)",
+                    fgColor: "#f39c12"
+                },
+                textCSS: 'font-family:\'Open Sans\'; font-size:25px; font-weight:300; color:#34495e;'
+            }
+
+        },
+        onEndCallback: function() {
+            console.log("Time out!");
+        }
+    });

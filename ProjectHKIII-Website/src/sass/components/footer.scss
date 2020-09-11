@@ -13,6 +13,7 @@ footer {
             .top-content {
                 padding-bottom: 1.5rem;
                 .company-info {
+                    line-height: 3;
                     .title {
                         padding-bottom: 2rem;
                         .title-text {
@@ -53,9 +54,10 @@ footer {
                     .content {
                         .content-item {
                             padding: 0 2px;
+                            margin: 0 auto;
                             iframe {
-                                height: 250px;
-                                width: 550px;
+                                height: 25rem;
+                                width: 50rem;
                             }
                         }
 
@@ -286,7 +288,7 @@ footer {
         right: 46px;
         cursor: pointer;
         min-width: 1.5rem;
-        border: 2px solid #000;
+        border: 1.5px solid #000;
         border-radius: 50%;
         width: 4rem;
         height: 4rem;
