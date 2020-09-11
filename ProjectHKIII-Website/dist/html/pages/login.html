@@ -25,59 +25,63 @@
                   <li class="nav-item"><a class="circle" href="../../../dist/html/pages/courses.html"><span>courses</span></a></li>
                   <li class="nav-item"><a class="circle" href="../../../dist/html/pages/exhibition.html"><span>exhibition</span></a></li>
                   <li class="nav-item"><a class="circle" href="../../../dist/html/pages/about-us.html"><span>about us</span></a></li>
-                  <li><a class="btn btn-login btn-hv btn-hv-bs btn-hv-up" href="../../../dist/html/pages/login.html"><span>login</span></a></li>
+                  <li><a class="btn btn-login btn-hv btn-hv-bs btn-hv-up trigger-btn" href="#myModal" data-toggle="modal"><span>login</span></a></li>
+                  <!-- Modal HTML-->
+                  <div class="modal fade" id="myModal">
+                    <div class="modal-dialog modal-login">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title">Member Login</h4>
+                          <button class="close" type="button" data-dismiss="modal" aria-hidden="true">×</button>
+                        </div>
+                        <div class="modal-body">
+                          <form action="/examples/actions/confirmation.php" method="post"></form>
+                          <div class="form-group"><i class="fa fa-user"></i>
+                            <input class="form-control" type="text" placeholder="Username" required="required"/>
+                          </div>
+                          <div class="form-group"><i class="fa fa-lock"></i>
+                            <input class="form-control" type="password" placeholder="Password" required="required"/>
+                          </div>
+                          <div class="form-group">
+                            <input class="btn btn-primary btn-block btn-lg" type="submit" value="Login"/>
+                          </div>
+                        </div>
+                        <div class="modal-footer"><a href="#">Forgot Password?</a></div>
+                      </div>
+                    </div>
+                  </div>
                 </ul>
               </div>
             </div>
           </div>
         </header>
       </section>
-      <div class="hold-transition login-page">
-        <div class="login-box">
-          <div class="login-logo"><a href="../../index2.html"><b>Admin</b>LTE</a></div>
-          <!-- /.login-logo-->
-          <div class="card">
-            <div class="card-body login-card-body">
-              <p class="login-box-msg">Sign in to start your session</p>
-              <form action="../../index3.html" method="post">
-                <div class="input-group mb-3">
-                  <input class="form-control" type="email" placeholder="Email"/>
-                  <div class="input-group-append">
-                    <div class="input-group-text"><span class="fas fa-envelope"></span></div>
-                  </div>
-                </div>
-                <div class="input-group mb-3">
-                  <input class="form-control" type="password" placeholder="Password"/>
-                  <div class="input-group-append">
-                    <div class="input-group-text"><span class="fas fa-lock"></span></div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-8">
-                    <div class="icheck-primary">
-                      <input id="remember" type="checkbox"/>
-                      <label for="remember">Remember Me</label>
-                    </div>
-                  </div>
-                  <!-- /.col-->
-                  <div class="col-4">
-                    <button class="btn btn-primary btn-block" type="submit">Sign In</button>
-                  </div>
-                  <!-- /.col-->
-                </div>
-              </form>
-              <div class="social-auth-links text-center mb-3">
-                <p>- OR -</p><a class="btn btn-block btn-primary" href="#"><i class="fab fa-facebook mr-2"></i> Sign in using Facebook</a><a class="btn btn-block btn-danger" href="#"><i class="fab fa-google-plus mr-2"></i> Sign in using Google+</a>
+      <section class="login">
+        <!-- Modal HTML-->
+        <div class="modal fade" id="myModal">
+          <div class="modal-dialog modal-login">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Member Login</h4>
+                <button class="close" type="button" data-dismiss="modal" aria-hidden="true">×</button>
               </div>
-              <!-- /.social-auth-links-->
-              <p class="mb-1"><a href="forgot-password.html">I forgot my password</a></p>
-              <p class="mb-0"><a class="text-center" href="register.html">Register a new membership</a></p>
+              <div class="modal-body">
+                <form action="/examples/actions/confirmation.php" method="post"></form>
+                <div class="form-group"><i class="fa fa-user"></i>
+                  <input class="form-control" type="text" placeholder="Username" required="required"/>
+                </div>
+                <div class="form-group"><i class="fa fa-lock"></i>
+                  <input class="form-control" type="password" placeholder="Password" required="required"/>
+                </div>
+                <div class="form-group">
+                  <input class="btn btn-primary btn-block btn-lg" type="submit" value="Login"/>
+                </div>
+              </div>
+              <div class="modal-footer"><a href="#">Forgot Password?</a></div>
             </div>
-            <!-- /.login-card-body-->
-            <!-- /.login-box-->
           </div>
         </div>
-      </div>
+      </section>
       <footer class="footer-wrapper">
         <section class="footer">
           <div class="footer-content">

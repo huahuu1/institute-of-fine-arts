@@ -213,7 +213,9 @@
     .files-uploaded-content {
         .img-uploaded {
             .img-wrapper {
-                width: 80%;
+                width: 90%;
+                padding: 2rem;
+                margin-bottom: 4rem !important;
                 border: 1px solid #fff;
                 box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
                 border-radius: 5px;
@@ -225,6 +227,77 @@
                     text-align: center;
                     img {
                         width: 70%;
+                    }
+                }
+                .img-text {
+                    .img-des {
+                        & > * {
+                            display: block;
+                        }
+                        span:nth-child(1) {
+                            font-family: 'EB Garamond', serif;
+                            font-weight: 400;
+                            color: #c9ab81;
+                            font-style: italic;
+                        }
+                        span:nth-child(2) {
+                            font-family: 'EB Garamond', serif;
+                            font-weight: 400;
+                            color: #525252;
+                            text-transform: uppercase;
+                            font-size: 2.2rem;
+                            margin-top: 1rem;
+                        }
+
+                        span:nth-child(3) {
+                            font-weight: 400;
+                            color: #525252;
+                            font-size: 1.5rem;
+                            margin-top: 1rem;
+                        }
+                        a.button-hover {
+                            position: relative;
+                            display: inline-block;
+                            margin-top: 2rem;
+                            background-color: #ee5b54;
+                            z-index: 0;
+                            padding: 1.8rem 2.2rem;
+                            text-transform: uppercase;
+                            border-radius: 50px;
+                            transition: all .3s ease;
+                            line-height: 0;
+                            span {
+                                color: #fff;
+                                margin-bottom: 0;
+                                font-family: "Montserrat",Arial,Helvetica,sans-serif;
+                                font-size: 1.3rem;
+                                font-weight: 600;
+                                font-style: normal;
+                            }
+                            &:hover {
+                                box-shadow: 0 0 0 1px #ee5b54 inset;
+                                span {
+                                    color: #ee5b54;
+                                }
+                                &:before {
+                                    transform: scale(1);
+                                }
+                            }
+                            &:before {
+                                content: "";
+                                position: absolute;
+                                z-index: -1;
+                                top: 0;
+                                left: 0;
+                                right: 0;
+                                bottom: 0;
+                                background: #fff;
+                                border-radius: 50px;
+                                box-shadow: 0 0 0 1px #ee5b54 inset;
+                                transform: scale(0);
+                                transition: all .3s ease;
+                            }
+                        }
                     }
                 }
             }

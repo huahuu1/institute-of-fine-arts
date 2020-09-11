@@ -26,7 +26,31 @@
                   <li class="nav-item"><a class="circle" href="../../../dist/html/pages/courses.html"><span>courses</span></a></li>
                   <li class="nav-item"><a class="circle" href="../../../dist/html/pages/exhibition.html"><span>exhibition</span></a></li>
                   <li class="nav-item"><a class="circle" href="../../../dist/html/pages/about-us.html"><span>about us</span></a></li>
-                  <li><a class="btn btn-login btn-hv btn-hv-bs btn-hv-up" href="../../../dist/html/pages/login.html"><span>login</span></a></li>
+                  <li><a class="btn btn-login btn-hv btn-hv-bs btn-hv-up trigger-btn" href="#myModal" data-toggle="modal"><span>login</span></a></li>
+                  <!-- Modal HTML-->
+                  <div class="modal fade" id="myModal">
+                    <div class="modal-dialog modal-login">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title">Login</h4>
+                          <button class="close" type="button" data-dismiss="modal" aria-hidden="true">×</button>
+                        </div>
+                        <div class="modal-body">
+                          <form action="/examples/actions/confirmation.php" method="post"></form>
+                          <div class="form-group"><i class="fa fa-user"></i>
+                            <input class="form-control" type="text" placeholder="Username" required="required"/>
+                          </div>
+                          <div class="form-group"><i class="fa fa-lock"></i>
+                            <input class="form-control" type="password" placeholder="Password" required="required"/>
+                          </div>
+                          <div class="form-group">
+                            <input class="btn btn-primary btn-block btn-lg" type="submit" value="Login"/>
+                          </div>
+                        </div>
+                        <div class="modal-footer"><a href="#">Forgot Password?</a></div>
+                      </div>
+                    </div>
+                  </div>
                 </ul>
               </div>
             </div>
@@ -60,25 +84,28 @@
         <div class="files-uploaded col-lg-12">
           <div class="files-uploaded-title"><span>Files Uploaded</span></div>
           <div class="files-uploaded-content row">
-            <div class="img-uploaded col-lg-4">
-              <div class="img-wrapper">
-                <div class="img-content"><img src="../../../dist/assets/images/Medium/show-slider-img-3.jpg" alt=""/></div>
-                <div class="img-name"><span>abstract wireframe</span></div>
-                <div class="img-des"><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi nisi iure voluptatibus saepe exercitationem dolor rem soluta hic? Quos, voluptatem nihil. Laborum, numquam. Tempora voluptatem recusandae autem magnam natus similique!</span></div>
+            <div class="img-uploaded col-lg-6">
+              <div class="img-wrapper row">
+                <div class="img-content col-lg-6"><img src="../../../dist/assets/images/Medium/show-slider-img-3.jpg" alt=""/></div>
+                <div class="img-text col-lg-6">
+                  <div class="img-des"><span>Mar 15 2020</span><span>abstract wireframe</span><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi nisi iure voluptatibus saepe exercitationem dolor rem soluta hic? Quos, voluptatem nihil. Laborum, numquam. Tempora voluptatem recusandae autem magnam natus similique!</span><a class="button-hover" href="#"><span>Update</span></a></div>
+                </div>
               </div>
             </div>
-            <div class="img-uploaded col-lg-4">
-              <div class="img-wrapper">
-                <div class="img-content"><img src="../../../dist/assets/images/Medium/show-slider-img-3.jpg" alt=""/></div>
-                <div class="img-name"><span>abstract wireframe</span></div>
-                <div class="img-des"><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi nisi iure voluptatibus saepe exercitationem dolor rem soluta hic? Quos, voluptatem nihil. Laborum, numquam. Tempora voluptatem recusandae autem magnam natus similique!</span></div>
+            <div class="img-uploaded col-lg-6">
+              <div class="img-wrapper row">
+                <div class="img-content col-lg-6"><img src="../../../dist/assets/images/Medium/show-slider-img-3.jpg" alt=""/></div>
+                <div class="img-text col-lg-6">
+                  <div class="img-des"><span>Mar 15 2020</span><span>abstract wireframe</span><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi nisi iure voluptatibus saepe exercitationem dolor rem soluta hic? Quos, voluptatem nihil. Laborum, numquam. Tempora voluptatem recusandae autem magnam natus similique!</span><a class="button-hover" href="#"><span>Update</span></a></div>
+                </div>
               </div>
             </div>
-            <div class="img-uploaded col-lg-4">
-              <div class="img-wrapper">
-                <div class="img-content"><img src="../../../dist/assets/images/Medium/show-slider-img-3.jpg" alt=""/></div>
-                <div class="img-name"><span>abstract wireframe</span></div>
-                <div class="img-des"><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi nisi iure voluptatibus saepe exercitationem dolor rem soluta hic? Quos, voluptatem nihil. Laborum, numquam. Tempora voluptatem recusandae autem magnam natus similique!</span></div>
+            <div class="img-uploaded col-lg-6">
+              <div class="img-wrapper row">
+                <div class="img-content col-lg-6"><img src="../../../dist/assets/images/Medium/show-slider-img-3.jpg" alt=""/></div>
+                <div class="img-text col-lg-6">
+                  <div class="img-des"><span>Mar 15 2020</span><span>abstract wireframe</span><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi nisi iure voluptatibus saepe exercitationem dolor rem soluta hic? Quos, voluptatem nihil. Laborum, numquam. Tempora voluptatem recusandae autem magnam natus similique!</span><a class="button-hover" href="#"><span>Update</span></a></div>
+                </div>
               </div>
             </div>
           </div>
@@ -154,5 +181,6 @@
     <script type="text/javascript" src="../../js/count-up.js"></script>
     <script type="text/javascript" src="../../js/teachers.js"></script>
     <script type="text/javascript" src="../../js/up-load.js"></script>
+    <script type="text/javascript" src="../../js/login.js"></script>
   </body>
 </html>

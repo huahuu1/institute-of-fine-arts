@@ -73,6 +73,25 @@ section.header
                                 //-         a
                                 //-             span sub
                             li
-                                a.btn.btn-login.btn-hv.btn-hv-bs.btn-hv-up(href="../../../dist/html/pages/login.html")
+                                a.btn.btn-login.btn-hv.btn-hv-bs.btn-hv-up.trigger-btn(href="#myModal", data-toggle="modal")
                                     span login
+                            // Modal HTML
+                            #myModal.modal.fade
+                                .modal-dialog.modal-login
+                                    .modal-content
+                                        .modal-header
+                                            h4.modal-title Login
+                                            button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+                                        .modal-body
+                                            form(action='/examples/actions/confirmation.php', method='post')
+                                            .form-group
+                                                i.fa.fa-user
+                                                input.form-control(type='text', placeholder='Username', required='required')
+                                            .form-group
+                                                i.fa.fa-lock
+                                                input.form-control(type='password', placeholder='Password', required='required')
+                                            .form-group
+                                                input.btn.btn-primary.btn-block.btn-lg(type='submit', value='Login')
+                                        .modal-footer
+                                            a(href='#') Forgot Password?
 
