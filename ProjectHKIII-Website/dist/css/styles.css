@@ -550,6 +550,13 @@ section.header header .container .nav {
         text-transform: uppercase;
         font-size: 1.4rem;
         font-weight: 600; }
+        section.header header .container .nav .nav-items ul li.nav-item:not(:last-child) a.circle img {
+          width: 3rem;
+          border: 1px solid #50514f;
+          border-radius: 50%;
+          margin-right: 1rem;
+          z-index: -1;
+          line-height: 0; }
         section.header header .container .nav .nav-items ul li.nav-item:not(:last-child) a.circle:after {
           content: ' ';
           display: block;
@@ -569,6 +576,8 @@ section.header header .container .nav {
           transform: scale(1.5); }
         section.header header .container .nav .nav-items ul li.nav-item:not(:last-child) a.circle:hover {
           color: #ee5b54; }
+      section.header header .container .nav .nav-items ul li.nav-item:not(:last-child) .student-nav:after {
+        bottom: 2px !important; }
       section.header header .container .nav .nav-items ul li.nav-item:not(:last-child) a.active:after {
         content: ' ';
         display: block;
@@ -623,6 +632,8 @@ section.header header .container .nav {
             section.header header .container .nav .nav-items ul li.nav-item:not(:last-child) ul.sub-nav li a span {
               text-transform: uppercase;
               margin-left: 1.5rem; }
+      section.header header .container .nav .nav-items ul li.nav-item:not(:last-child) .student-sub-nav {
+        top: 44px !important; }
       section.header header .container .nav .nav-items ul li.nav-item:not(:last-child):hover ul.sub-nav {
         opacity: 1;
         pointer-events: inherit; }

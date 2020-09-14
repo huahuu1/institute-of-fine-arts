@@ -8,7 +8,7 @@ $(function () {
     $(this).addClass("active");
   });
   $(document).ready(function () {
-    $("[href]").each(function () {
+    $("a.circle[href]").each(function () {
       if (this.href == window.location.href) {
         if ($("a.circle").hasClass("active")) {
           $("a.circle").removeClass("active");
