@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Document</title>
-    <link rel="stylesheet" href="../../../plugins/fontawesome-free/css/all.min.css"/>
-    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"/>
-    <link rel="stylesheet" href="../../../plugins/icheck-bootstrap/icheck-bootstrap.min.css"/>
-    <link rel="stylesheet" href="../../../dist/css/adminlte.min.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"/><link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,500,700&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+    <link rel="stylesheet" href="../../../dist/css/jquery.classycountdown.min.css"/>
     <link rel="stylesheet" href="../../../dist/css/styles.css"/>
   </head>
   <body>
@@ -31,7 +32,7 @@
                     <div class="modal-dialog modal-login">
                       <div class="modal-content">
                         <div class="modal-header">
-                          <h4 class="modal-title">Member Login</h4>
+                          <h4 class="modal-title">Login</h4>
                           <button class="close" type="button" data-dismiss="modal" aria-hidden="true">×</button>
                         </div>
                         <div class="modal-body">
@@ -56,32 +57,51 @@
           </div>
         </header>
       </section>
-      <section class="login">
-        <!-- Modal HTML-->
-        <div class="modal fade" id="myModal">
-          <div class="modal-dialog modal-login">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h4 class="modal-title">Member Login</h4>
-                <button class="close" type="button" data-dismiss="modal" aria-hidden="true">×</button>
-              </div>
-              <div class="modal-body">
-                <form action="/examples/actions/confirmation.php" method="post"></form>
-                <div class="form-group"><i class="fa fa-user"></i>
-                  <input class="form-control" type="text" placeholder="Username" required="required"/>
-                </div>
-                <div class="form-group"><i class="fa fa-lock"></i>
-                  <input class="form-control" type="password" placeholder="Password" required="required"/>
-                </div>
-                <div class="form-group">
-                  <input class="btn btn-primary btn-block btn-lg" type="submit" value="Login"/>
-                </div>
-              </div>
-              <div class="modal-footer"><a href="#">Forgot Password?</a></div>
-            </div>
+      <section class="slider">
+        <div class="owl-carousel owl-theme banner-inner slider-main">
+          <div class="item">
+            <div class="owl-lazy" data-src="../../../dist/assets/images/slider/slider01.jpg"></div>
+          </div>
+          <div class="item">
+            <div class="owl-lazy" data-src="../../../dist/assets/images/slider/slider02.jpg"></div>
+          </div>
+        </div>
+        <div class="slider-content">
+          <div class="slider-circle"><img src="../../../dist/assets/images/slider/draw_paint.png" alt=""/>
+            <div class="slider-dot-image"><img src="../../../dist/assets/images/slider/dot_03.png" alt=""/></div>
+          </div>
+          <div class="slider-text">
+            <h1><span>LEARN TO</span><span>Draw & Paint</span><span>If you like to paint, you may encounter the myth that</span><span>it takes talent. Don’t believe it.</span></h1>
+            <div class="button-apply"><a class="button-hover" href="#"><span>apply today</span></a></div>
           </div>
         </div>
       </section>
+      <div class="page">
+        <div class="container">
+          <div class="left">
+            <div class="login">Login</div>
+            <div class="eula">By logging in you agree to the ridiculously long terms that you didn't bother to read.</div>
+          </div>
+          <div class="right">
+            <svg viewBox="0 0 320 300">
+              <defs>
+                <lineargradient id="linearGradient" inkscape:collect="always" x1="13" y1="193.49992" x2="307" y2="193.49992" gradientUnits="userSpaceOnUse">
+                  <stop id="stop876" style="stop-color:#ff00ff;" offset="0"></stop>
+                  <stop id="stop878" style="stop-color:#ff0000;" offset="1"></stop>
+                </lineargradient>
+              </defs>
+              <path d="m 40,120.00016 239.99984,-3.2e-4 c 0,0 24.99263,0.79932 25.00016,35.00016 0.008,34.20084 -25.00016,35 -25.00016,35 h -239.99984 c 0,-0.0205 -25,4.01348 -25,38.5 0,34.48652 25,38.5 25,38.5 h 215 c 0,0 20,-0.99604 20,-25 0,-24.00396 -20,-25 -20,-25 h -190 c 0,0 -20,1.71033 -20,25 0,24.00396 20,25 20,25 h 168.57143"></path>
+            </svg>
+            <div class="form">
+              <label for="email">Email</label>
+              <input id="email" type="email"/>
+              <label for="password">Password</label>
+              <input id="password" type="password"/>
+              <input id="submit" type="submit" value="Submit"/>
+            </div>
+          </div>
+        </div>
+      </div>
       <footer class="footer-wrapper">
         <section class="footer">
           <div class="footer-content">
@@ -134,8 +154,25 @@
         <div id="backtoTop"><i class="fas fa-chevron-up"></i></div>
       </footer>
     </div>
-    <script src="../../../plugins/jquery/jquery.min.js"></script>
-    <script src="../../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="../../../dist/js/adminlte.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="../../js/index.js"></script>
+    <script type="text/javascript" src="../../js/navigation.js"></script>
+    <script type="text/javascript" src="../../js/slider.js"></script>
+    <script type="text/javascript" src="../../js/back-to-top.js"></script>
+    <script src="http://benalman.com/code/projects/jquery-throttle-debounce/jquery.ba-throttle-debounce.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery.knob.js"></script>
+    <script type="text/javascript" src="../../js/jquery.classycountdown.min.js"></script>
+    <script type="text/javascript" src="../../js/countdown-timer.js"></script>
+    <script type="text/javascript" src="../../js/top-students.js"></script>
+    <script type="text/javascript" src="../../js/jquery.countup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="../../js/count-up.js"></script>
+    <script type="text/javascript" src="../../js/teachers.js"></script>
+    <script type="text/javascript" src="../../js/up-load.js"></script>
+    <script type="text/javascript" src="../../js/login.js"></script>
+    <script type="text/javascript" src="../../js/login-page.js"></script>
   </body>
 </html>

@@ -128,7 +128,11 @@ section.teachers {
           border-radius: 50px;
           box-shadow: 0 0 0 1px #ee5b54 inset;
           transform: scale(0);
-          transition: all .3s ease; }
+          transition: all .3s ease;
+          -webkit-border-radius: 50px;
+          -moz-border-radius: 50px;
+          -ms-border-radius: 50px;
+          -o-border-radius: 50px; }
 
 .owl-carousel .owl-item .owl-lazy:not([src]), .owl-carousel .owl-item .owl-lazy[src^=""] {
   max-height: none !important; }
