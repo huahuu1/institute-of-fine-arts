@@ -578,6 +578,8 @@ section.header header .container .nav {
           color: #ee5b54; }
       section.header header .container .nav .nav-items ul li.nav-item:not(:last-child) .student-nav:after {
         bottom: 2px !important; }
+      section.header header .container .nav .nav-items ul li.nav-item:not(:last-child) .student-nav span {
+        text-decoration: underline; }
       section.header header .container .nav .nav-items ul li.nav-item:not(:last-child) a.active:after {
         content: ' ';
         display: block;
@@ -729,85 +731,89 @@ section.competition {
     text-align: center; }
     section.competition .container .comp-title .title-text {
       line-height: 1;
-      padding-top: 2rem;
+      padding-top: 3rem;
       margin-bottom: 4rem; }
       section.competition .container .comp-title .title-text span {
         font-family: "Playfair Display",Arial,Helvetica,sans-serif;
         font-size: 3.5rem;
         font-weight: 900;
         color: #ee5b54; }
-  section.competition .container .comps .comp-col .comp-img img {
-    width: 100%; }
-  section.competition .container .comps .comp-col .comp-name {
-    margin-bottom: 2.2rem;
-    margin-top: 2.8rem; }
-    section.competition .container .comps .comp-col .comp-name span {
-      font-family: "Montserrat",Arial,Helvetica,sans-serif;
-      font-size: 2.5rem;
-      font-weight: 900; }
-  section.competition .container .comps .comp-col .comp-calendar ul {
-    display: flex; }
-    section.competition .container .comps .comp-col .comp-calendar ul li {
-      font-size: 1.5rem; }
-      section.competition .container .comps .comp-col .comp-calendar ul li i {
-        margin-right: 1rem;
-        color: #ee5b54; }
-      section.competition .container .comps .comp-col .comp-calendar ul li span {
-        text-transform: uppercase;
-        margin-right: 2rem; }
-  section.competition .container .comps .comp-col .comp-countdown {
-    margin-top: 2rem; }
-    section.competition .container .comps .comp-col .comp-countdown .ClassyCountdownDemo {
-      width: 40rem;
-      margin: 0 auto; }
-      section.competition .container .comps .comp-col .comp-countdown .ClassyCountdownDemo .ClassyCountdown-days {
-        margin: 0 2rem 2rem 0; }
-      section.competition .container .comps .comp-col .comp-countdown .ClassyCountdownDemo .ClassyCountdown-hours {
-        margin: 0 2rem 2rem 0; }
-      section.competition .container .comps .comp-col .comp-countdown .ClassyCountdownDemo .ClassyCountdown-minutes {
-        margin: 0 2rem 2rem 0; }
-      section.competition .container .comps .comp-col .comp-countdown .ClassyCountdownDemo .ClassyCountdown-seconds {
-        margin: 0 2rem 2rem 0; }
-  section.competition .container .comps .comp-col .comp-button {
-    text-align: center;
-    margin-top: 4rem; }
-    section.competition .container .comps .comp-col .comp-button .button-apply {
-      border-radius: 50px;
-      background-color: #ee5b54;
-      display: inline-block; }
-      section.competition .container .comps .comp-col .comp-button .button-apply a.button-hover {
-        position: relative;
-        display: block;
-        z-index: 0;
-        padding: 1rem 2.2rem;
-        text-transform: uppercase;
+  section.competition .container .comps .comp-col {
+    margin-bottom: 5rem; }
+    section.competition .container .comps .comp-col .comp-img {
+      text-align: center; }
+      section.competition .container .comps .comp-col .comp-img img {
+        width: 80%; }
+    section.competition .container .comps .comp-col .comp-name {
+      margin-bottom: 2.2rem;
+      margin-top: 2.8rem; }
+      section.competition .container .comps .comp-col .comp-name span {
+        font-family: "Montserrat",Arial,Helvetica,sans-serif;
+        font-size: 2.5rem;
+        font-weight: 900; }
+    section.competition .container .comps .comp-col .comp-calendar ul {
+      display: flex; }
+      section.competition .container .comps .comp-col .comp-calendar ul li {
+        font-size: 1.5rem; }
+        section.competition .container .comps .comp-col .comp-calendar ul li i {
+          margin-right: 1rem;
+          color: #ee5b54; }
+        section.competition .container .comps .comp-col .comp-calendar ul li span {
+          text-transform: uppercase;
+          margin-right: 2rem; }
+    section.competition .container .comps .comp-col .comp-countdown {
+      margin-top: 2rem; }
+      section.competition .container .comps .comp-col .comp-countdown .ClassyCountdownDemo {
+        width: 50rem;
+        margin: 0 auto; }
+        section.competition .container .comps .comp-col .comp-countdown .ClassyCountdownDemo .ClassyCountdown-days {
+          margin: 0 2rem 2rem 0; }
+        section.competition .container .comps .comp-col .comp-countdown .ClassyCountdownDemo .ClassyCountdown-hours {
+          margin: 0 2rem 2rem 0; }
+        section.competition .container .comps .comp-col .comp-countdown .ClassyCountdownDemo .ClassyCountdown-minutes {
+          margin: 0 2rem 2rem 0; }
+        section.competition .container .comps .comp-col .comp-countdown .ClassyCountdownDemo .ClassyCountdown-seconds {
+          margin: 0 2rem 2rem 0; }
+    section.competition .container .comps .comp-col .comp-button {
+      text-align: center;
+      margin-top: 4rem; }
+      section.competition .container .comps .comp-col .comp-button .button-apply {
         border-radius: 50px;
-        transition: all .3s ease; }
-        section.competition .container .comps .comp-col .comp-button .button-apply a.button-hover span {
-          color: #fff;
-          margin-bottom: 0;
-          font-family: "Montserrat",Arial,Helvetica,sans-serif;
-          font-size: 1.3rem;
-          font-weight: 600; }
-        section.competition .container .comps .comp-col .comp-button .button-apply a.button-hover:hover {
-          box-shadow: 0 0 0 1px #ee5b54 inset; }
-          section.competition .container .comps .comp-col .comp-button .button-apply a.button-hover:hover span {
-            color: #ee5b54; }
-          section.competition .container .comps .comp-col .comp-button .button-apply a.button-hover:hover:before {
-            transform: scale(1); }
-        section.competition .container .comps .comp-col .comp-button .button-apply a.button-hover:before {
-          content: "";
-          position: absolute;
-          z-index: -1;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          background: #fff;
+        background-color: #ee5b54;
+        display: inline-block; }
+        section.competition .container .comps .comp-col .comp-button .button-apply a.button-hover {
+          position: relative;
+          display: block;
+          z-index: 0;
+          padding: 1rem 2.2rem;
+          text-transform: uppercase;
           border-radius: 50px;
-          box-shadow: 0 0 0 1px #ee5b54 inset;
-          transform: scale(0);
           transition: all .3s ease; }
+          section.competition .container .comps .comp-col .comp-button .button-apply a.button-hover span {
+            color: #fff;
+            margin-bottom: 0;
+            font-family: "Montserrat",Arial,Helvetica,sans-serif;
+            font-size: 1.3rem;
+            font-weight: 600; }
+          section.competition .container .comps .comp-col .comp-button .button-apply a.button-hover:hover {
+            box-shadow: 0 0 0 1px #ee5b54 inset; }
+            section.competition .container .comps .comp-col .comp-button .button-apply a.button-hover:hover span {
+              color: #ee5b54; }
+            section.competition .container .comps .comp-col .comp-button .button-apply a.button-hover:hover:before {
+              transform: scale(1); }
+          section.competition .container .comps .comp-col .comp-button .button-apply a.button-hover:before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #fff;
+            border-radius: 50px;
+            box-shadow: 0 0 0 1px #ee5b54 inset;
+            transform: scale(0);
+            transition: all .3s ease; }
 
 section.top-students {
   height: 970px;
@@ -915,7 +921,7 @@ section.top-students {
   height: 26rem; }
   .count-up .wrapper-countup {
     height: 100%;
-    background-image: url("../assets/images/pattern.jpg");
+    background-image: url("../images/pattern.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; }
@@ -950,7 +956,7 @@ section.teachers {
   height: 600px; }
   section.teachers .wrapper-teachers {
     height: 100%;
-    background-image: url("../assets/images/yellow_brush_stroke_01.jpg");
+    background-image: url("../images/yellow_brush_stroke_01.jpg");
     background-size: contain; }
     section.teachers .wrapper-teachers .teacher-slider {
       height: 100%;
@@ -1218,12 +1224,12 @@ section.teachers {
               transform: scaleX(0);
               transition: .3s; }
 
-.file-upload {
+form .file-upload {
   background-color: #ffffff;
   width: 600px;
   margin: 0 auto;
   padding: 20px; }
-  .file-upload .file-upload-btn {
+  form .file-upload .file-upload-btn {
     width: 100%;
     margin: 0;
     color: #fff;
@@ -1237,21 +1243,21 @@ section.teachers {
     font-weight: 600;
     font-family: "Montserrat",Arial,Helvetica,sans-serif;
     font-size: 1.5rem; }
-    .file-upload .file-upload-btn:hover {
+    form .file-upload .file-upload-btn:hover {
       background: #c13b2a;
       color: #ffffff;
       transition: all .3s ease;
       cursor: pointer; }
-    .file-upload .file-upload-btn:active {
+    form .file-upload .file-upload-btn:active {
       border: 0;
       transition: all .2s ease; }
-  .file-upload .image-upload-wrap {
+  form .file-upload .image-upload-wrap {
     height: 70.5%;
     margin-top: 20px;
     border: 2px dashed #ee5b54;
     position: relative;
     transition: all .3s ease; }
-    .file-upload .image-upload-wrap .file-upload-input {
+    form .file-upload .image-upload-wrap .file-upload-input {
       position: absolute;
       margin: 0;
       padding: 0;
@@ -1260,30 +1266,30 @@ section.teachers {
       outline: none;
       opacity: 0;
       cursor: pointer; }
-    .file-upload .image-upload-wrap .drag-text {
+    form .file-upload .image-upload-wrap .drag-text {
       height: 100%;
       display: flex;
       align-items: center;
       justify-content: center; }
-      .file-upload .image-upload-wrap .drag-text h3 {
+      form .file-upload .image-upload-wrap .drag-text h3 {
         font-weight: 100;
         text-transform: uppercase;
         color: #ee5b54;
         padding: 60px 0; }
-    .file-upload .image-upload-wrap:hover h3 {
+    form .file-upload .image-upload-wrap:hover h3 {
       color: #fff; }
-  .file-upload .file-upload-content {
+  form .file-upload .file-upload-content {
     display: none;
     text-align: center; }
-    .file-upload .file-upload-content .file-upload-image {
+    form .file-upload .file-upload-content .file-upload-image {
       max-height: 200px;
       max-width: 200px;
       margin: auto;
       padding: 20px; }
-    .file-upload .file-upload-content .image-title-wrap {
+    form .file-upload .file-upload-content .image-title-wrap {
       padding: 0 15px 15px 15px;
       color: #222; }
-      .file-upload .file-upload-content .image-title-wrap .remove-image {
+      form .file-upload .file-upload-content .image-title-wrap .remove-image {
         margin: 0;
         color: #fff;
         background: #808285;
@@ -1296,12 +1302,12 @@ section.teachers {
         font-weight: 600;
         font-family: "Montserrat",Arial,Helvetica,sans-serif;
         font-size: 1.5rem; }
-        .file-upload .file-upload-content .image-title-wrap .remove-image:hover {
+        form .file-upload .file-upload-content .image-title-wrap .remove-image:hover {
           background: #50514f;
           color: #ffffff;
           transition: all .3s ease;
           cursor: pointer; }
-        .file-upload .file-upload-content .image-title-wrap .remove-image:active {
+        form .file-upload .file-upload-content .image-title-wrap .remove-image:active {
           border: 0;
           transition: all .3s ease; }
 
@@ -1325,13 +1331,16 @@ section.teachers {
         font-style: normal;
         text-decoration: underline; }
     .file-description .des-content .img-title {
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem;
+      line-height: .8; }
     .file-description .des-content textarea {
-      resize: none; }
+      resize: none;
+      margin-bottom: 2rem; }
   .file-description .button-upload {
     border-radius: 50px;
     text-align: center; }
     .file-description .button-upload a.button-hover {
+      cursor: pointer;
       position: relative;
       display: inline-block;
       background-color: #ee5b54;
@@ -1368,13 +1377,16 @@ section.teachers {
         transition: all .3s ease; }
 
 .files-uploaded .files-uploaded-title {
-  position: relative;
   font-family: 'EB Garamond', serif;
   color: #525252;
+  font-weight: 400;
+  font-size: 5.1rem;
+  text-transform: uppercase;
+  font-style: normal;
   padding-left: 1.5rem;
-  font-weight: 600;
-  font-size: 3rem;
-  margin-bottom: 5rem; }
+  margin-bottom: 5rem;
+  text-align: center;
+  position: relative; }
   .files-uploaded .files-uploaded-title:before {
     content: " ";
     width: 10%;

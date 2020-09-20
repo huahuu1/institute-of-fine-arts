@@ -43,6 +43,8 @@ section.header header .container .nav {
           color: #ee5b54; }
       section.header header .container .nav .nav-items ul li.nav-item:not(:last-child) .student-nav:after {
         bottom: 2px !important; }
+      section.header header .container .nav .nav-items ul li.nav-item:not(:last-child) .student-nav span {
+        text-decoration: underline; }
       section.header header .container .nav .nav-items ul li.nav-item:not(:last-child) a.active:after {
         content: ' ';
         display: block;

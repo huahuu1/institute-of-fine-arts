@@ -27,7 +27,7 @@ section.competition {
             // }
             .title-text {
                 line-height: 1;
-                padding-top: 2rem;
+                padding-top: 3rem;
                 margin-bottom: 4rem;
                 span {
                     font-family: "Playfair Display",Arial,Helvetica,sans-serif;
@@ -39,10 +39,11 @@ section.competition {
         }
         .comps {
             .comp-col {
+                margin-bottom: 5rem;
                 .comp-img {
-                    // text-align: center;
+                    text-align: center;
                     img {
-                        width: 100%;
+                        width: 80%;
                     }
                 }
                 .comp-name {
@@ -78,7 +79,7 @@ section.competition {
                     margin-top: 2rem;
                     .ClassyCountdownDemo {
                         // width: 50rem;
-                        width: 40rem;
+                        width: 50rem;
                         margin: 0 auto;
                         .ClassyCountdown-days {
                             margin: 0 2rem 2rem 0;

@@ -61,6 +61,9 @@ section.header {
                                 &:after {
                                     bottom: 2px !important;
                                 }
+                                span {
+                                    text-decoration: underline;
+                                }
                             }
                             a.active {
                                 &:after {

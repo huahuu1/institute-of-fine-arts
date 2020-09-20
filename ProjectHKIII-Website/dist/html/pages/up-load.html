@@ -62,30 +62,32 @@
           </div>
         </header>
       </section>
-      <section class="up-load row">
-        <div class="file-upload col-lg-6">
-          <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button>
-          <div class="image-upload-wrap">
-            <input class="file-upload-input" type="file" onchange="readURL(this);" accept="image/*"/>
-            <div class="drag-text">
-              <h3>Drag and drop a file or select add Image</h3>
+      <section class="up-load">
+        <form class="row" action="">
+          <div class="file-upload col-lg-6">
+            <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button>
+            <div class="image-upload-wrap">
+              <input class="file-upload-input" type="file" onchange="readURL(this);" accept="image/*"/>
+              <div class="drag-text">
+                <h3>Drag and drop a file or select add Image</h3>
+              </div>
+            </div>
+            <div class="file-upload-content"><img class="file-upload-image" src="#" alt="your image"/>
+              <div class="image-title-wrap">
+                <button class="remove-image" type="button" onclick="removeUpload()">Remove&ensp;<span class="image-title">Uploaded Image</span></button>
+              </div>
             </div>
           </div>
-          <div class="file-upload-content"><img class="file-upload-image" src="#" alt="your image"/>
-            <div class="image-title-wrap">
-              <button class="remove-image" type="button" onclick="removeUpload()">Remove&ensp;<span class="image-title">Uploaded Image</span></button>
+          <div class="file-description col-lg-6">
+            <div class="des-content">
+              <div class="des-title"><span>Design Name:</span></div>
+              <input class="img-title form-control form-control-lg"/>
+              <div class="des-title"><span>Description:</span></div>
+              <textarea class="form-control form-control-lg" id="img-description" name="short_description" cols="30" rows="11"></textarea>
             </div>
+            <div class="button-upload"><a class="button-hover" href="#"><span>Upload</span></a></div>
           </div>
-        </div>
-        <div class="file-description col-lg-6">
-          <div class="des-content">
-            <div class="des-title"><span>Design Name:</span></div>
-            <input class="img-title form-control form-control-lg"/>
-            <div class="des-title"><span>Description:</span></div>
-            <textarea class="form-control form-control-lg" id="img-description" name="short_description" cols="30" rows="11"></textarea>
-          </div>
-          <div class="button-upload"><a class="button-hover" href="#"><span>Upload</span></a></div>
-        </div>
+        </form>
         <div class="files-uploaded col-lg-12">
           <div class="files-uploaded-title"><span>Files Uploaded</span></div>
           <div class="files-uploaded-content row">
